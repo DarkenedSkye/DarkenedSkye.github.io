@@ -2,12 +2,46 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://darkenedskye.github.io</id>
     <title>Darkened Skye</title>
-    <updated>2022-03-28T00:31:34.512Z</updated>
+    <updated>2022-03-28T00:47:55.144Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://darkenedskye.github.io"/>
     <link rel="self" href="https://darkenedskye.github.io/atom.xml"/>
-    <subtitle>个人分享网站</subtitle>
+    <subtitle>一个分享工具、游戏和个人经历的个人网站</subtitle>
     <logo>https://darkenedskye.github.io/images/avatar.png</logo>
     <icon>https://darkenedskye.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Darkened Skye</rights>
+    <entry>
+        <title type="html"><![CDATA[个人经历-夜晚]]></title>
+        <id>https://darkenedskye.github.io/post/ge-ren-jing-li-ye-wan/</id>
+        <link href="https://darkenedskye.github.io/post/ge-ren-jing-li-ye-wan/">
+        </link>
+        <updated>2022-03-28T00:47:21.000Z</updated>
+        <content type="html"><![CDATA[<p><strong>一个人在笑，不代表他高兴</strong></p>
+<p><strong>一个人在哭，同样不代表他忧伤</strong></p>
+<p><strong>但当一个人忘记了表情，他却无法再释放自己的感情</strong></p>
+<p><strong>黑暗，总是伴随着宁静，让我沉醉</strong></p>
+<p>习惯了在夜晚聆听，享受着在文字上的倾吐，却发现自己越走越远</p>
+<p>我可以<strong>惧怕离别的恐惧</strong>，但<strong>不会惧怕孤独的缠绵</strong>，狠下心，我可以放弃一切，颂着歌，我却依然忧伤</p>
+<p>最近越发的抑郁，让我想去吻上海洛因的味道，去沉迷自己的爱好，沉迷自己的执着，<strong>起码可以见证或者的存在</strong></p>
+<p>亲人，朋友，健康，幸福快乐，照片</p>
+<p>这似曾相识的选择题，依旧在心中重演</p>
+<p>舍弃了照片，<strong>即使它让我拥有了记忆，但它却终无法给我现在的幸福</strong>，轻轻撕碎，它还是张张纸片</p>
+<p>舍弃了朋友，<strong>即使没有了整个世界，我还有自己的世界</strong>，我还有亲人的怀抱，就不会哭泣</p>
+<p>舍弃了健康，当失去了健康，你才会了解到健康的重要，当你没有失去亲人和幸福，但你还是知道它们的重要</p>
+<p>舍弃了幸福快乐，<strong>因为我会习惯上痛苦</strong>，<strong>却无法习惯上没有他们的黑夜</strong></p>
+<p>舍弃的时候，感觉不到犹豫，心中，它早就有了答案</p>
+<p>学习没有动力，我怪不得环境，<strong>却无法自拔</strong></p>
+<p>生活的单调，我希望沉溺，<strong>内心却依旧彷徨恐惧</strong></p>
+<p><em><strong>发现，黑暗也越来越充斥了抑郁</strong></em></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[我的网站诞生了！]]></title>
+        <id>https://darkenedskye.github.io/post/wo-de-wang-zhan-dan-sheng-liao/</id>
+        <link href="https://darkenedskye.github.io/post/wo-de-wang-zhan-dan-sheng-liao/">
+        </link>
+        <updated>2022-03-28T00:46:54.000Z</updated>
+        <content type="html"><![CDATA[<p>今天2022/3/26，我的第一个网站诞生了！！！</p>
+]]></content>
+    </entry>
 </feed>

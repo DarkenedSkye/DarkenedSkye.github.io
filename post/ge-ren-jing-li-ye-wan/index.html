@@ -2,23 +2,192 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="一个人在笑，不代表他高兴
+一个人在哭，同样不代表他忧伤
+但当一个人忘记了表情，他却无法再释放自己的感情
+黑暗，总是伴随着宁静，让我沉醉
+习惯了在夜晚聆听，享受着在文字上的倾吐，却发现自己越走越远
+我可以惧怕离别的恐惧，但不会惧怕孤独的缠绵，..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://darkenedskye.github.io/media/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://darkenedskye.github.io/styles/main.css">
+    <!-- 代码渲染风格css -->
+    
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/rainbow.min.css">
+    
+    <!-- 代码高亮插件 -->
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
+    <!-- 代码复制插件 -->
+    <script src="https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/clipboard.min.js"></script>
+    <!-- live2d插件 -->
+    <link rel="stylesheet" href="https://darkenedskye.github.io/media/css/live2d.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
     <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
-    <link rel="stylesheet" href="https://darkenedskye.github.io/media/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://darkenedskye.github.io/media/css/live2d.css">
-    <meta name="description" content="一个分享工具、游戏和个人经历的个人网站" />
-    <link rel="stylesheet" href="https://darkenedskye.github.io/styles/main.css">
-    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-    <title>Darkened Skye-说说</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
+    <!-- 数学公式 -->
+    
+    <title>个人经历-夜晚</title>
+
+    <!-- 大纲索引css调整 -->
+    
+    <style>
+        .markdownIt-TOC {
+            margin-left: 28%;
+            padding-left: 2px;
+            width: 80%;
+        }
+
+        .markdownIt-TOC li {
+            padding-left: 8%;
+        }
+    </style>
+    
 </head>
 
 <body>
+    <div id="landlord">
+        <div class="message" style="opacity:0"></div>
+        <canvas id="live2d" width="240" height="250" class="live2d"></canvas>
+    </div>
+    <div id="domainname" style="display:none">https://darkenedskye.github.io</div>
     <div id="content">
-        <div class="nav-large">
-            <div class="row">
-                <!--------------- pc端菜单栏👇 ---------------->
-                <div class="side"><head>
+        <div>
+            <!----------- 移动端导航栏👇 ----------------->
+            <div id="bar">
+                <style>
+  .navmobile {
+    z-index: 15;
+    max-height: 40vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .navbar {
+      max-width: 100vw;
+    }
+  }
+
+  @media screen and (max-width:1200px) and (min-width: 768px) {
+    @media (min-width: 768px) {
+      .navbar-nav {
+        float: right;
+        margin: 0;
+      }
+    }
+  }
+
+  @media screen and (max-width:768px) {
+    .mbapspan {
+      padding: 0;
+    }
+  }
+</style>
+<div class="pjaxloading"  onclick="pjaxloadingClose()">
+  <div class="loadingbackground"></div>
+  <div id="loading">
+    <div class="loading">
+    </div>
+  </div>
+</div>
+<nav class="navbar navbar-inverse navbar-fixed-top navmobile">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barmenu"
+        aria-expanded="false" id="barbutton">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a data-pjax class="navbar-brand" style="color:white" href="https://darkenedskye.github.io">Darkened Skye&nbsp;&nbsp;|</a>
+      <span class="navbar-brand mbapspan"><i id="mbaplayer" class="fa fa-play-circle-o" aria-hidden="true"
+          style="font-size: 28px;top: 12px;position: absolute;" onclick="aplayerPlay();"></i></span>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="barmenu">
+      <ul class="nav navbar-nav">
+        
+        
+        <li>
+          <a data-pjax href="/" style="color:white">
+            首页
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a data-pjax href="/archives" style="color:white">
+            归档
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a data-pjax href="/tags" style="color:white">
+            标签
+          </a>
+        </li>
+        
+        
+        
+        <li>
+          <a data-pjax href="/post/about" style="color:white">
+            关于
+          </a>
+        </li>
+        
+        
+        
+        
+          
+        <li><a data-pjax href="https://darkenedskye.github.io/friends" style="color:white">友链</a></li>
+
+        
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+
+  <!-- 引入jQuery核心js文件 -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+  <script>
+    let btstate = false;
+    var bt = $("#barbutton");
+    var bm = $("#barmenu");
+    bt.click(function () {
+      dropdown();
+    })
+    function dropdown() {
+      console.log(btstate);
+      //下拉
+      if (btstate == false) {
+        bt.removeClass("collapsed");
+        bt.attr("aria-expanded", "true");
+        bm.attr("aria-expanded", "true")
+        bm.fadeIn(700);
+        btstate = true;
+      }
+      else {
+        bt.addClass("collapsed");
+        bt.attr("aria-expanded", "false");
+        bm.removeClass("in");
+        bm.hide();
+        bm.attr("aria-expanded", "false");
+        btstate = false;
+      }
+    }
+  </script> 
+            </div>
+            <!----------- 移动端导航栏👆 ----------------->
+
+            <!--------------- pc端菜单栏👇 ---------------->
+            <div class="side"><head>
     <link rel="stylesheet" href="https://darkenedskye.github.io/media/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://darkenedskye.github.io/styles/main.css">
     
@@ -801,217 +970,206 @@ menulist.eq(i).show();
     }
 </script>
 <!----夜间模式👆--></div>
-                <!--------------- pc端菜单栏👆 ---------------->
+            <!--------------- pc端菜单栏👆 ---------------->
 
-                <!----------- 移动端导航栏👇 ----------------->
-                <div class="tbar"> <style>
-  .navmobile {
-    z-index: 15;
-    max-height: 40vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
-  }
-
-  @media screen and (max-width: 1200px) {
-    .navbar {
-      max-width: 100vw;
-    }
-  }
-
-  @media screen and (max-width:1200px) and (min-width: 768px) {
-    @media (min-width: 768px) {
-      .navbar-nav {
-        float: right;
-        margin: 0;
-      }
-    }
-  }
-
-  @media screen and (max-width:768px) {
-    .mbapspan {
-      padding: 0;
-    }
-  }
-</style>
-<div class="pjaxloading"  onclick="pjaxloadingClose()">
-  <div class="loadingbackground"></div>
-  <div id="loading">
-    <div class="loading">
-    </div>
-  </div>
-</div>
-<nav class="navbar navbar-inverse navbar-fixed-top navmobile">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barmenu"
-        aria-expanded="false" id="barbutton">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a data-pjax class="navbar-brand" style="color:white" href="https://darkenedskye.github.io">Darkened Skye&nbsp;&nbsp;|</a>
-      <span class="navbar-brand mbapspan"><i id="mbaplayer" class="fa fa-play-circle-o" aria-hidden="true"
-          style="font-size: 28px;top: 12px;position: absolute;" onclick="aplayerPlay();"></i></span>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="barmenu">
-      <ul class="nav navbar-nav">
-        
-        
-        <li>
-          <a data-pjax href="/" style="color:white">
-            首页
-          </a>
-        </li>
-        
-        
-        
-        <li>
-          <a data-pjax href="/archives" style="color:white">
-            归档
-          </a>
-        </li>
-        
-        
-        
-        <li>
-          <a data-pjax href="/tags" style="color:white">
-            标签
-          </a>
-        </li>
-        
-        
-        
-        <li>
-          <a data-pjax href="/post/about" style="color:white">
-            关于
-          </a>
-        </li>
-        
-        
-        
-        
-          
-        <li><a data-pjax href="https://darkenedskye.github.io/friends" style="color:white">友链</a></li>
-
-        
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
-
-
-  <!-- 引入jQuery核心js文件 -->
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
-  <script>
-    let btstate = false;
-    var bt = $("#barbutton");
-    var bm = $("#barmenu");
-    bt.click(function () {
-      dropdown();
-    })
-    function dropdown() {
-      console.log(btstate);
-      //下拉
-      if (btstate == false) {
-        bt.removeClass("collapsed");
-        bt.attr("aria-expanded", "true");
-        bm.attr("aria-expanded", "true")
-        bm.fadeIn(700);
-        btstate = true;
-      }
-      else {
-        bt.addClass("collapsed");
-        bt.attr("aria-expanded", "false");
-        bm.removeClass("in");
-        bm.hide();
-        bm.attr("aria-expanded", "false");
-        btstate = false;
-      }
-    }
-  </script> 
-                <!----------- 移动端导航栏👆 ----------------->
-                </div>
-
-                <!-- ----------------左侧菜单栏html 👇-------------------------------------->
-                
-                    <div id="tab1" class="tab">
-                        <div class="bars">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <div class="close"></div>
+            <!-- ----------------左侧菜单栏html 👇-------------------------------------->
+            
+            <div>
+                <div id="tab1" class="tab">
+                    <div class="bars">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
+                    <div class="close"></div>
+                </div>
                 <div class="col-md-1 col-lg-3"></div>
-                <div id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-7" style="z-index: 11;">
-                    <div class="mobilebar">
-                        <img src="" alt="" class="plbg">
-<script>
-    var bgchoice = "default";
-    if(bgchoice=='default')
-        var plbgurl = "/media/images/custom-mobilebg.jpg"
-    else  
-        var plbgurl = ""
-    $(".plbg").attr("src",plbgurl);
-    $(".plbg").fadeIn(200);
-</script>
-                    </div>
-                    <div id="talks">
-    <div id="talkContainer">
-    </div>
-    <button id="getmorebt" type="button" onclick="add()">获取更多</button>
-</div>
-<!-- 弹窗 -->
-<div id="myModal" class="modal">
-    <img class="modal-content" id="img01">
-</div>
+                <!-- main标签，pjax渲染时加载以下内容👇 -->
+                <div id="main" class="col-xs-12 col-sm-12 col-md-12 col-lg-7" style="padding:0;">
+                    <div class="readingmode" onclick="readingmode()">阅</div>
+                    <link rel="stylesheet" href="https://darkenedskye.github.io/media/css/font-awesome.css">
+
+<body>
+    <div class="allcontent" id="postdetail">
+        <div class="postshow postpadding" style="padding-bottom: 0;">
+            
+            <div class="postdetailimg">
+                <img src="https://darkenedskye.github.io/post-images/ge-ren-jing-li-ye-wan.jpg" class="postimage" style="cursor:auto">
+            </div>
+            <div class="postinfo-detail">
+                <div class="postdate"><i class="fa fa-calendar"></i>2022-03-28</div>
+                <div class="poststatus postdate"><i class="fa fa-clock-o"></i> 2 min read</div>
+                <div class="posttag">
+                    
                 </div>
+            </div>
+            
+        <div id="articlecontent">
+            <div id="texttitle" style="text-align: center">
+                <h2 id="ptitle">个人经历-夜晚</h2>
+                <!-- id 将作为查询条件 -->
+                <div id="pl" style="display:none">https://darkenedskye.github.io/post/ge-ren-jing-li-ye-wan/</div>
+                <div id="rootaddr" style="display:none">https://darkenedskye.github.io</div>
+                
+            </div>
+            <div class="text ">
+                <p><strong>一个人在笑，不代表他高兴</strong></p>
+<p><strong>一个人在哭，同样不代表他忧伤</strong></p>
+<p><strong>但当一个人忘记了表情，他却无法再释放自己的感情</strong></p>
+<p><strong>黑暗，总是伴随着宁静，让我沉醉</strong></p>
+<p>习惯了在夜晚聆听，享受着在文字上的倾吐，却发现自己越走越远</p>
+<p>我可以<strong>惧怕离别的恐惧</strong>，但<strong>不会惧怕孤独的缠绵</strong>，狠下心，我可以放弃一切，颂着歌，我却依然忧伤</p>
+<p>最近越发的抑郁，让我想去吻上海洛因的味道，去沉迷自己的爱好，沉迷自己的执着，<strong>起码可以见证或者的存在</strong></p>
+<p>亲人，朋友，健康，幸福快乐，照片</p>
+<p>这似曾相识的选择题，依旧在心中重演</p>
+<p>舍弃了照片，<strong>即使它让我拥有了记忆，但它却终无法给我现在的幸福</strong>，轻轻撕碎，它还是张张纸片</p>
+<p>舍弃了朋友，<strong>即使没有了整个世界，我还有自己的世界</strong>，我还有亲人的怀抱，就不会哭泣</p>
+<p>舍弃了健康，当失去了健康，你才会了解到健康的重要，当你没有失去亲人和幸福，但你还是知道它们的重要</p>
+<p>舍弃了幸福快乐，<strong>因为我会习惯上痛苦</strong>，<strong>却无法习惯上没有他们的黑夜</strong></p>
+<p>舍弃的时候，感觉不到犹豫，心中，它早就有了答案</p>
+<p>学习没有动力，我怪不得环境，<strong>却无法自拔</strong></p>
+<p>生活的单调，我希望沉溺，<strong>内心却依旧彷徨恐惧</strong></p>
+<p><em><strong>发现，黑暗也越来越充斥了抑郁</strong></em></p>
+
+            </div>
+            <hr style="width: 80%;">
+            
+            <div class="postfooter">
+                <ul class="post-copyright">
+                    <li><strong>文章作者：</strong></li>
+            <li><strong>原文链接：</strong>https://darkenedskye.github.io/post/ge-ren-jing-li-ye-wan/</li>
+            <li><strong>版权声明：</strong>本博客所有文章除特别声明外，均采用<i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA
+                许可协议。转载请注明出处！</li>
+            </ul>
+        </div>
+        
+        <div id="otherpost">
+            
+            
+            <a data-pjax class="next-post-pc" href="https://darkenedskye.github.io/post/wo-de-wang-zhan-dan-sheng-liao/"  style="color: black;">
+                <div id="npcontainer">
+                    
+                    
+                    <img src="/media/images/custom-postdefaultimage.png" style="width: 100%;" class="opimg">
+                    
+                    
+                    <h4 class="optitle">我的网站诞生了！</h4>
+                </div>
+            </a>
+            <div class="next-post">
+                下一篇 <a  data-pjax href="https://darkenedskye.github.io/post/wo-de-wang-zhan-dan-sheng-liao/">我的网站诞生了！</a>
+            </div>
+            
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- 弹窗 -->
+    <div id="myModal" class="modal">
+        <img class="modal-content" id="img01">
+    </div>
+</body>
+<script>
+    //文章阅读热度
+    var pl = $("#pl").html();
+    var rootaddr = $("#rootaddr").html();
+    pl = pl.replace(rootaddr, "");
+    $("#hotnum").attr('id', pl);
+</script>
+                    <div class="toc-container">
+                        
+                    </div>
+                    <div class="tog">
+                        <div class="toggleContainer">
+                            <div class="toggle">
+                                <i class="fas fa-angle-double-up"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!---------------------------- 评论系统👇 ------------------------->
+                    <div id="comment" class="comment">
+                        <div class="commentcontainer">
+                            
+                                
+                            
+                        </div>
+                    </div>
+                    <!---------------------------- 评论系统👆 ------------------------->
+                </div>
+                <!-- main标签，pjax渲染时加载以上内容👆 -->
                 <div class="col-md-1 col-lg-2"></div>
-                <!-- ----------------左侧菜单栏html 👆-------------------------------------->
-                
-                <!--------------- 顶部菜单栏html👇--------->
-                
-                <!--------------- 顶部菜单栏html👆--------->
+                <div id="bg">
+                </div>
             </div>
-            <!-- aplayer播放器加载👇 -->
+            <!-- ----------------左侧菜单栏html 👆-------------------------------------->
             
-            <!-- aplayer播放器加载👆 -->
         </div>
-        <div id="bg">
-        </div>
-        <!-- 背景图加载方式👇 -->
-        <div id="bgchoice" style="display: none">default
-            </div>
+        <!-- aplayer播放器加载👇 -->
             
-            <div id="bgurl" style="display:none">\media\images\custom-bgimage.jpg</div>
-               
-        <!-- 背景图加载方式👆 -->
+        <!-- aplayer播放器加载👆 -->
     </div>
-    
-    <div id="landlord">
-        <div class="message" style="opacity:0"></div>
-        <canvas id="live2d" width="240" height="250" class="live2d"></canvas>
-    </div>
-    <div id="domainname" style="display:none">https://darkenedskye.github.io</div>
+    <!-- 背景图加载方式👇 -->
+    <div id="bgchoice" style="display: none">default
+                </div>
+                
+                <div id="bgurl" style="display:none">\media\images\custom-bgimage.jpg</div>
+                
+    <!-- 背景图加载方式👆 -->
 </body>
 
-<!-------------------- live2d功能👇 --------------------------->
+<script>
+    //初始化
+    //更换twikoo头像
+    setTimeout(replaceAvatar,1000);
+    setTimeout(replaceAvatar,2000);
+    setTimeout(replaceAvatar,8000);
+    // --------为每张图片添加懒加载（lazyload）标签-->懒加载功能 👇------------
+    lazyload();
+    //为文章内所有代码块添加代码复制功能 👇
+    codeinit();
+    // ------代码高亮显示功能-------------
+    hljs.initHighlightingOnLoad();
+    if (shareChoice)
+        shareInit();
+    if (donateChoice)
+        donateInit();
+</script>
 
-    <script type="text/javascript">
-        var message_Path = '/live2d/'
-        var home_Path = document.getElementById("domainname").innerHTML+"/"; //此处修改为你的域名，必须带斜杠
-    </script>
-    <script type="text/javascript" src="https://darkenedskye.github.io/media/js/live2d.js"></script>
-    <script type="text/javascript" src="https://darkenedskye.github.io/media/live2d/js/message.js"></script>
-    <script type="text/javascript">
-            loadlive2d("live2d", "https://darkenedskye.github.io/media/live2d/assets/tororo.model.json");
-    </script>
+<!------------------ 加载live2d模型功能（看板娘）👇 ---------------->
 
-<!-------------------- live2d功能👆 --------------------------->
+<script type="text/javascript">
+    var message_Path = '/live2d/'
+    var home_Path = document.getElementById("domainname").innerHTML + "/"; //此处修改为你的域名，必须带斜杠
+</script>
+<script type="text/javascript" src="https://darkenedskye.github.io/media/js/live2d.js"></script>
+<script type="text/javascript" src="https://darkenedskye.github.io/media/live2d/js/message.js"></script>
+<script type="text/javascript">
+    loadlive2d("live2d", "https://darkenedskye.github.io/media/live2d/assets/tororo.model.json");
+</script>
+
+<!------------------ 加载live2d模型功能（看板娘）👆 ---------------->
+
+
+<!----------------------- 返回顶部按钮功能👇 --------------------->
+<script>
+    $(function () {
+        $('.toggleContainer').click(function () {
+            $('html,body').animate({
+                scrollTop: '0px'
+            }, 800);
+        });
+        $(window).scroll(function () {
+            var st = $(window).scrollTop();
+            if (st > 30) {
+                $(".toggleContainer").fadeIn(400);
+            } else {
+                $(".toggleContainer").fadeOut(100);
+            }
+        });
+    });
+</script>
+<!----------------------- 返回顶部按钮功能👆 --------------------->
+
 
 <!------------ 加载全局背景图功能👇（开始时没有写好，这功能有点鸡肋/(ㄒoㄒ)/~~） -->
 <script>
@@ -1033,16 +1191,28 @@ menulist.eq(i).show();
 <!------------ 加载全局背景图功能👆（开始时没有写好，这功能有点鸡肋/(ㄒoㄒ)/~~） -->
 
 
-        <script src="https://darkenedskye.github.io/media/js/index.js"></script>
 
 
-<!--------------------------- 说说功能👇------------------------- -->
+<script src="https://darkenedskye.github.io/media/js/index.js"></script>
+
+
 <script>
-
-    window.onload = function(){
+    //加载后的事件同步（阅读量、移动端评论等
+    window.onload = function () {
+    //代码块高亮渲染
+    document.querySelectorAll('pre code').forEach((block) => {
+            hljs.highlightBlock(block);
+    });
+        getHotnum();
+        var sharepc = $(".share").eq(0).html();
+        $(".share").eq(1).html(sharepc);   //插件只会寻找一个分享标签渲染，所以需要手动添加到移动端
         aplayerbtnInit();
-        get();
-        add();
+        $(".hljs").css({
+            "padding": "20px"
+        })
     }
 </script>
-<!--------------------------- 说说功能👆------------------------- -->
+
+<!-- <script src="https://darkenedskye.github.io/media/js/av-min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@3.13.0/dist/av-min.js"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@4.6.1/dist/av-live-query-min.js"></script> -->
