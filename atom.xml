@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://darkenedskye.github.io</id>
     <title>Darkened Skye</title>
-    <updated>2022-03-28T00:58:06.769Z</updated>
+    <updated>2022-03-28T01:05:12.105Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://darkenedskye.github.io"/>
     <link rel="self" href="https://darkenedskye.github.io/atom.xml"/>
@@ -11,9 +11,35 @@
     <icon>https://darkenedskye.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, Darkened Skye</rights>
     <entry>
-        <title type="html"><![CDATA[个人经历-抑郁]]></title>
+        <title type="html"><![CDATA[个人经历-夜晚]]></title>
         <id>https://darkenedskye.github.io/post/ge-ren-jing-li-ye-wan/</id>
         <link href="https://darkenedskye.github.io/post/ge-ren-jing-li-ye-wan/">
+        </link>
+        <updated>2022-03-28T01:01:32.000Z</updated>
+        <content type="html"><![CDATA[<p>夜总是那么静，却又那么孤独。很多人喜欢白昼，因为它代表光明，象征希望，总能<br>
+带给人们许多正能量。可我偏偏喜欢这黑夜，它虽失去了白天的光芒，但也带走了喧哗，<br>
+给了我们所希望的安静。</p>
+<p>夜，总是温柔的，它会轻轻迈着脚步走来，再悄悄地离去，它在乎我们的感受，也懂<br>
+得人心。它会静静地听我们的故事，再一个个收藏起来。它怕我们难过，尽力给我们需要<br>
+的温暖。它害怕失去我们这一群喜欢黑夜的孩子，所以它总是把它最耀眼的星空给我们。</p>
+<p>我不明白那些讨厌黑夜的人，他们究竟为何不喜这黑夜？明明黑夜才是那个懂事的乖<br>
+孩子，而白昼只不过是更加乐观而已。或许，这就好比在现实生活中两个同样的孩子，只<br>
+不过性格有差别罢了。乐观一点，叫白昼的孩子会讨人喜欢，因为他时刻露出自己可爱的<br>
+笑容，会逗人开心；而那个安静一点，叫黑夜的孩子，从来都那么安静，只是静静呆在一<br>
+旁，哪怕自己有白昼两倍那么好看，但他从不热情，他喜欢默默注视一切，把该做好的放<br>
+在心底却从不表露，仿佛与他人无关。这样一看，自然区别明显得很，白昼当然讨人喜<br>
+欢，而黑夜便不言而喻。</p>
+<p>其实，喜白昼也好，喜黑夜也罢，每个人都有属于自己的观点，而自己的性格、长相<br>
+等一切都源于自己。要相信，每个人都是独一无二的，没人能够改变什么。就像白昼不能<br>
+变成黑夜，风不能变成雨，雨不能变成云一样。世间万物自有定数，或喜或悲，或晴或<br>
+雨，都不是我们能够改变的。而我们能做的，就是选择自己所喜欢的方式生活，做好自<br>
+己，不必为别人而改变什么。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[个人经历-抑郁]]></title>
+        <id>https://darkenedskye.github.io/post/ge-ren-jing-li-yi-yu/</id>
+        <link href="https://darkenedskye.github.io/post/ge-ren-jing-li-yi-yu/">
         </link>
         <updated>2022-03-27T05:00:00.000Z</updated>
         <content type="html"><![CDATA[<p><strong>一个人在笑，不代表他高兴</strong></p>
