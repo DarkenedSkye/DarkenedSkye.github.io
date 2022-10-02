@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>关于硬盘分区的过程</title>
+      <link href="/posts/613f4b9d.html"/>
+      <url>/posts/613f4b9d.html</url>
+      
+        <content type="html"><![CDATA[<p>在最近几节网课中，我的同学还是有部分不会硬盘分区的操作，所以我这次写一篇文章，讲一下关于硬盘分区的操作流程。<br>提示：如果想直接进行实操的话，请使用虚拟硬盘进行操作，<strong>否则可能对您的硬盘进行不可逆的损坏！</strong></p><span id="more"></span><p> <em><strong>预备步骤：创建虚拟硬盘</strong></em>（若已学会请跳过）<br>右击此电脑（win7是计算机），选择管理。<img src="/../post-images/%E7%A1%AC%E7%9B%98%E5%88%86%E5%8C%BA%E7%9A%84%E8%BF%87%E7%A8%8B/1662208807509.PNG"><br>这时候你已经完成一半了，因为你进入了计算机管理。接下来一定要按照步骤做！（因为不按照步骤做会出现问题）<br>在左边的菜单点击储存→磁盘管理，稍等一下后点击上方的操作，再点击创造VHD。<img src="/../post-images/%E7%A1%AC%E7%9B%98%E5%88%86%E5%8C%BA%E7%9A%84%E8%BF%87%E7%A8%8B/1662209449064.PNG"><br>在这里，我们就可以创造我们的虚拟硬盘了！位置的浏览按钮是你虚拟硬盘保存的位置，虚拟硬盘大小记得注意单位。<img src="/../post-images/%E7%A1%AC%E7%9B%98%E5%88%86%E5%8C%BA%E7%9A%84%E8%BF%87%E7%A8%8B/1662209777726.PNG"><br>创建好后，在计算机管理→储存→磁盘服务→操作中选择附加VHD，点击浏览，找到刚刚创建完的VHD虚拟硬盘，这时候你会发现，电脑新加入了一个硬盘，但是没有空间显示，接着往下看！<br> <strong>第一步：准备好需要使用的程序</strong><br>我们所需要的程序有两个：一个是DiskGenius，另一个是WinHex。<img src="/../post-images/%E7%A1%AC%E7%9B%98%E5%88%86%E5%8C%BA%E7%9A%84%E8%BF%87%E7%A8%8B/1662207666097.png"><br>考虑到有部分人没有以上程序，我现在打包好放在了蓝奏云里，有需要自取：<br>蓝奏云：<a href="https://wwm.lanzouj.com/b037ea91a">https://wwm.lanzouj.com/b037ea91a</a><br>密码:sfdm<br>在这里我们只是使用名叫DiskGenius的程序就行了，WinHex以后再用！<img src="/../post-images/%E7%A1%AC%E7%9B%98%E5%88%86%E5%8C%BA%E7%9A%84%E8%BF%87%E7%A8%8B/1662210142413.PNG"><br> <strong>第二步：使用DiskGenius给硬盘进行分区</strong><br>首先先解压我们的DiskGenius的压缩包（没有解压软件的自行下载winrar），然后在解压出来的文件中找到DiskGenius应用程序。<img src="/../post-images/%E7%A1%AC%E7%9B%98%E5%88%86%E5%8C%BA%E7%9A%84%E8%BF%87%E7%A8%8B/1662210666592.PNG"><br>接着打开DiskGenius，选择你的虚拟硬盘，因为是刚刚创建的VHD虚拟硬盘，所以是没有任何东西并且没有分区。（在DiskGenius上显示的是空闲，有分区就要注意是不是刚刚创好的的虚拟硬盘）鼠标右键“空闲”区域，选择“建立新分区”。<img src="/../post-images/%E7%A1%AC%E7%9B%98%E5%88%86%E5%8C%BA%E7%9A%84%E8%BF%87%E7%A8%8B/1662211058092.PNG"><br>接着你只要在“新分区大小”中输入你需要给这个虚拟硬盘分出的内存即可（不可超过虚拟硬盘的最大内存），我这里分出了一个200GB的分区和一个300GB的分区。<br>最后记得点击右上角的保存更改就OK了！<img src="/../post-images/%E7%A1%AC%E7%9B%98%E5%88%86%E5%8C%BA%E7%9A%84%E8%BF%87%E7%A8%8B/1662211173672.PNG"><br> <strong>第三步：弹出VHD虚拟硬盘</strong><br>因为虚拟硬盘对电脑可能会有一点影响，所以最后还是让VHD虚拟硬盘弹出电脑好一点。<br>还是老样子，在计算机管理→储存→磁盘管理中鼠标右击虚拟硬盘，点击分离VHD虚拟硬盘。<img src="/../post-images/%E7%A1%AC%E7%9B%98%E5%88%86%E5%8C%BA%E7%9A%84%E8%BF%87%E7%A8%8B/1662211820692.PNG"><br>最后点击确定即可！</p><!-- more --><p> <strong>结束语</strong><br>关于计算机应用这门技术，我个人的感觉也不多，但是无论哪一门专业，都是一个道理：只有坚持下来的人才是胜者！所以，希望我的同学们能认真学习每一堂课，成绩步步高升！无论以前多么不如人意，从现在开始，做好每一天的自己，让现在的自己比以前的自己更强！</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 个人经验 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【PS】8个无版权，免费，高清且可商用的图片素材网站</title>
+      <link href="/posts/6702e21a.html"/>
+      <url>/posts/6702e21a.html</url>
+      
+        <content type="html"><![CDATA[<p><strong>引导语</strong>：<br>   众所周知：当我们使用PS去制作海报等工程量较大的图片时，会需要很多素材，而且在平常的时候也会因为没有素材而烦恼。那么今天我给各位推荐几个我常用的几个图片素材网站。</p><span id="more"></span><p>   <strong>1.Pexels</strong><br>   <strong>推荐指数</strong>：★★★★★<br>   <strong>直达链接</strong>：<a href="https://www.pexels.com/zh-cn/">https://www.pexels.com/zh-cn/</a></p><p>   <strong>pexels</strong>是一个免费高清素材下载网站，所有图片都由专业人士使用顶级的拍摄设备进行拍摄，每一张图片都会显示拍摄设备和光圈、焦距等具体信息，让你可以在下载图片的同时，学习相机的参数设置，简直不能再良心。并且支持中文。<br>   不仅如此，其图片的种类也非常丰富，还提供了下载尺寸和颜色筛选，如果你对图片要求质量较高，可以直接下载原图。<br>   最重要的是，这个网站不仅完全免费，不用注册登录、不会限速，一键即可下载任何你想要的资源。</p><!-- more --><p>   <strong>2.Unsplash</strong><br>   <strong>推荐指数</strong>：★★★★☆<br>   <strong>直达链接</strong>：<a href="https://unsplash.com/">https://unsplash.com/</a></p><p>   <strong>Unsplash</strong>则提供了高质量的摄影图片，全部CCO，全部无版权，全部可以免费商用。宁缺毋滥是该网站最大的特点，其每天只更新1张图片，全部由顶级摄影师拍摄并免费分享。图片的像素全部都在5K以上，而且还提供了海量的高清矢量素材，主要类别包括人物、生活、自然类素材。（不支持中文）<br>   并且该网站也推出了APP，你可以在APP里面找到高质量的图片作为自己的手机壁纸。（不过目前本人测试APP不怎么好用，所以个人推荐网页端）</p><!-- more --><p>   <strong>3.Stocksnap</strong><br>   <strong>推荐指数</strong>：★★★★☆<br>   <strong>直达链接</strong>：<a href="https://stocksnap.io/">https://stocksnap.io/</a></p><p>   <strong>Stocksnap</strong>是由多位摄影师创办的一个免费图片分享网站，其图片全部由摄影师精挑细选，不会有任何的质量问题，作为一个开放的高清数码素材库，其图片资源同样是无版权、可以免费商用，并且可以按照下载量、收藏量、浏览量对于图片进行快速筛选，方便你找到自己想要的图片。</p><!-- more --><p>   <strong>4.pixabay</strong><br>   <strong>推荐指数</strong>：★★★★☆<br>   <strong>直达链接</strong>：<a href="https://pixabay.com/">https://pixabay.com/</a></p><p>   无论是平面设计，还是视频剪辑，都经常会遇到需要抠图的情况，但是抠图确实是一个令人头疼的活儿。那么与其耗费大量时间去抠“头发丝”，不如直接使用矢量图片（无背景图片）。<strong>pixabay</strong>就提供了140万+张免费的优质矢量图，足以满足你的大部分设计需求。</p><!-- more --><p>   <strong>5.flaticon</strong><br>   <strong>推荐指数</strong>：★★★★★<br>   <strong>直达链接</strong>：<a href="https://www.flaticon.com/">https://www.flaticon.com/</a></p><p>   如果你是为了设计PPT，那么你需要了解<strong>flaticon</strong>，其提供了60万+的免费图标素材，而且全部支持png、svg、eps、psd 4种常见格式，让你在制作PPT时可以随心所欲地添加自己想要的图标。</p><!-- more --><p>   <strong>6.Hippopx</strong><br>   <strong>推荐指数</strong>：★★★★☆<br>   <strong>直达链接</strong>：<a href="https://www.hippopx.com/zh">https://www.hippopx.com/zh</a></p><p>   这个网站提供了20万+免费高清无版权图片，全部可以用于商业用途。一进到网站，既可以看到“<strong>基于CCO协议的免版权图库</strong>”，总算放下一颗心。<br>   并且其每张图片都提供了几十种不同的分辨率，你可以根据手机、平板、电脑的具体型号或尺寸进行选择，不用进行裁剪即可作为壁纸使用，还是很方便的。该网站也支持几十种语言进行搜索，其中就包括简体中文，让你可以随心所欲搜索到自己想要的图片，随意找了几张图，质量还算OK。</p><!-- more --><p>   <strong>7.Iconfont</strong><br>   <strong>推荐指数</strong>：★★★★<br>   <strong>直达链接</strong>：<a href="https://www.iconfont.cn/">https://www.iconfont.cn/</a></p><p>   <strong>Iconfont</strong>是阿里巴巴旗下的矢量图标库，由于其采取了去中心化，大部分图标由用户自主上传，基本上所有图标的下载都是免费的。<br>   提供的图标类型也非常丰富，包括知名应用图标、中国特色图标也可以在这里下载到。下载时有多种尺寸可供选择，还可以自定义颜色，格式支持SVG、AI和PNG，可以满足大部分的设计师和前端的需求，对我们使用PS的也很友好。</p><!-- more --><p>   <strong>8.美图集</strong><br>   <strong>推荐指数</strong>：★★★★<br>   <strong>直达链接</strong>：<a href="https://photo.ihansen.org/">https://photo.ihansen.org/</a></p><p>  ** 美图集**是一个国内免费素材网站，你可以认为是Pexels的国内版，里面的风景素材比较符合唯美风格的图片。<br>  不仅如此，里面还有很多素材分类，甚至还是个壁纸网站，你可以直接来到这个网站的壁纸分区选择自己喜欢的图片当壁纸用。</p><!-- more --><p>   <strong>结尾</strong>：<br>   OK，以上就是8个图片素材网站的介绍了，相信它们足以满足你90%以上的设计需求了，不做设计也可以用来做壁纸。希望这些网站能帮助各位的设计走出第一步！</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 个人经验 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>关于这个博客网站</title>
+      <link href="/posts/71e7c4f4.html"/>
+      <url>/posts/71e7c4f4.html</url>
+      
+        <content type="html"><![CDATA[<p><strong>哈哈哈，没想到还会有人来看关于这个网站！</strong></p><span id="more"></span><p>行吧，你都进来了，那我和你讲讲我本人和这个网站的经历吧。</p><!-- more --><p>😊<strong>关于博主</strong><br>素笺゜淡墨<br>计算机应用技术 高一<br>目前在博伦职业技术学校学习<br>主要研究方向：还没决定</p><!-- more --><p>👉<strong>关于博客</strong><br>关于这个网站的诞生历程说来话长，因为这原本是我初中就设计开始的计划。记得当时的电脑课，老师把我任命为信息课代表，因此我比班级里任何一个人更有时间接触电脑，加上初一初二的编程社团，我每天都有时间接触电脑去学习电脑的各个操作。<br>直到有一天，我在B站上看到了某个UP主的视频，他完成了自己的网站，那一天我在想，我也要制作自己的网站。正好班级需要一个我们自己的网站来纪念我们的班级。在那之后，每次在学校的电脑课完成任务后，我就开始学习网站的搭建和构造，在社团的时候也在不断实践自己的猜测。直到初三的时候，因为要参加中考，所以取消了社团和电脑课，我的计划在那个时候开始停止。<br>初三毕业了，我重新开始我的计划，可惜到了暑假结束也一直没能完成。因为github访问较难，加上我的电脑在建设中途损毁，所以我被迫重新开始。终于在2022年9月3日搭建完成！<br>就是可惜，因为之前电脑损毁，原本的班级资料也没了，所以这个网站即使建好了对班级也没有用。所以这个网站最后只能拿来作为我的博客网站使用。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> about </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+    
+    
+    <entry>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>link</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>tags</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+  
+</search>
