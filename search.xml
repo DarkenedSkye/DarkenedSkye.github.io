@@ -4,11 +4,11 @@
   
     
     <entry>
-      <title>关于硬盘分区的过程</title>
-      <link href="/posts/613f4b9d.html"/>
-      <url>/posts/613f4b9d.html</url>
+      <title>【PS】中秋节祝福海报制作</title>
+      <link href="/posts/c6e01b37.html"/>
+      <url>/posts/c6e01b37.html</url>
       
-        <content type="html"><![CDATA[<p>在最近几节网课中，我的同学还是有部分不会硬盘分区的操作，所以我这次写一篇文章，讲一下关于硬盘分区的操作流程。<br>提示：如果想直接进行实操的话，请使用虚拟硬盘进行操作，<strong>否则可能对您的硬盘进行不可逆的损坏！</strong></p><span id="more"></span><p> <em><strong>预备步骤：创建虚拟硬盘</strong></em>（若已学会请跳过）<br>右击此电脑（win7是计算机），选择管理。<img src="/../post-images/%E7%A1%AC%E7%9B%98%E5%88%86%E5%8C%BA%E7%9A%84%E8%BF%87%E7%A8%8B/1662208807509.PNG"><br>这时候你已经完成一半了，因为你进入了计算机管理。接下来一定要按照步骤做！（因为不按照步骤做会出现问题）<br>在左边的菜单点击储存→磁盘管理，稍等一下后点击上方的操作，再点击创造VHD。<img src="/../post-images/%E7%A1%AC%E7%9B%98%E5%88%86%E5%8C%BA%E7%9A%84%E8%BF%87%E7%A8%8B/1662209449064.PNG"><br>在这里，我们就可以创造我们的虚拟硬盘了！位置的浏览按钮是你虚拟硬盘保存的位置，虚拟硬盘大小记得注意单位。<img src="/../post-images/%E7%A1%AC%E7%9B%98%E5%88%86%E5%8C%BA%E7%9A%84%E8%BF%87%E7%A8%8B/1662209777726.PNG"><br>创建好后，在计算机管理→储存→磁盘服务→操作中选择附加VHD，点击浏览，找到刚刚创建完的VHD虚拟硬盘，这时候你会发现，电脑新加入了一个硬盘，但是没有空间显示，接着往下看！<br> <strong>第一步：准备好需要使用的程序</strong><br>我们所需要的程序有两个：一个是DiskGenius，另一个是WinHex。<img src="/../post-images/%E7%A1%AC%E7%9B%98%E5%88%86%E5%8C%BA%E7%9A%84%E8%BF%87%E7%A8%8B/1662207666097.png"><br>考虑到有部分人没有以上程序，我现在打包好放在了蓝奏云里，有需要自取：<br>蓝奏云：<a href="https://wwm.lanzouj.com/b037ea91a">https://wwm.lanzouj.com/b037ea91a</a><br>密码:sfdm<br>在这里我们只是使用名叫DiskGenius的程序就行了，WinHex以后再用！<img src="/../post-images/%E7%A1%AC%E7%9B%98%E5%88%86%E5%8C%BA%E7%9A%84%E8%BF%87%E7%A8%8B/1662210142413.PNG"><br> <strong>第二步：使用DiskGenius给硬盘进行分区</strong><br>首先先解压我们的DiskGenius的压缩包（没有解压软件的自行下载winrar），然后在解压出来的文件中找到DiskGenius应用程序。<img src="/../post-images/%E7%A1%AC%E7%9B%98%E5%88%86%E5%8C%BA%E7%9A%84%E8%BF%87%E7%A8%8B/1662210666592.PNG"><br>接着打开DiskGenius，选择你的虚拟硬盘，因为是刚刚创建的VHD虚拟硬盘，所以是没有任何东西并且没有分区。（在DiskGenius上显示的是空闲，有分区就要注意是不是刚刚创好的的虚拟硬盘）鼠标右键“空闲”区域，选择“建立新分区”。<img src="/../post-images/%E7%A1%AC%E7%9B%98%E5%88%86%E5%8C%BA%E7%9A%84%E8%BF%87%E7%A8%8B/1662211058092.PNG"><br>接着你只要在“新分区大小”中输入你需要给这个虚拟硬盘分出的内存即可（不可超过虚拟硬盘的最大内存），我这里分出了一个200GB的分区和一个300GB的分区。<br>最后记得点击右上角的保存更改就OK了！<img src="/../post-images/%E7%A1%AC%E7%9B%98%E5%88%86%E5%8C%BA%E7%9A%84%E8%BF%87%E7%A8%8B/1662211173672.PNG"><br> <strong>第三步：弹出VHD虚拟硬盘</strong><br>因为虚拟硬盘对电脑可能会有一点影响，所以最后还是让VHD虚拟硬盘弹出电脑好一点。<br>还是老样子，在计算机管理→储存→磁盘管理中鼠标右击虚拟硬盘，点击分离VHD虚拟硬盘。<img src="/../post-images/%E7%A1%AC%E7%9B%98%E5%88%86%E5%8C%BA%E7%9A%84%E8%BF%87%E7%A8%8B/1662211820692.PNG"><br>最后点击确定即可！</p><!-- more --><p> <strong>结束语</strong><br>关于计算机应用这门技术，我个人的感觉也不多，但是无论哪一门专业，都是一个道理：只有坚持下来的人才是胜者！所以，希望我的同学们能认真学习每一堂课，成绩步步高升！无论以前多么不如人意，从现在开始，做好每一天的自己，让现在的自己比以前的自己更强！</p>]]></content>
+        <content type="html"><![CDATA[<p><strong>引导语</strong>：<br>   时光如影，如月如梭，不知不觉来到了一年一度的中秋节，相比各位也已经购买月饼准备吃了吧😊(虽然我还没月饼.jpg)不过各位应该也知道，这次的中秋节是和教师节同一天的。所以我们可以做一个祝福海报来感谢老师。</p><span id="more"></span><p><strong>中秋节科普</strong>：<br>   中秋节，又称祭月节、月光诞、月夕、秋节、仲秋节、拜月节、月娘节、月亮节、团圆节等，是中国民间传统节日。中秋节源自天象崇拜，由上古时代秋夕祭月演变而来。中秋节自古便有祭月、赏月、吃月饼、看花灯、赏桂花、饮桂花酒等民俗，流传至今，经久不息。<br>   中秋节起源于上古时代，普及于汉代，定型于唐代。中秋节是秋季时令习俗的综合，其所包含的节俗因素，大都有古老的渊源。祭月作为民间做节的重要礼俗之一，逐渐演化为的赏月、颂月等活动。中秋节以月之圆兆人之团圆，为寄托思念故乡，思念亲人之情，祈盼丰收、幸福，成为丰富多彩、弥足珍贵的文化遗产。</p><!-- more --><p><strong>教师节科普</strong>：<br>   教师节，也是中国教师的节日，旨在肯定教师为教育事业所做的贡献。在中国近现代史上有多个日期曾作为教师节。直至1985年，第六届全国人大常委会第九次会议通过了国务院关于建立教师节的议案，才真正确定了1985年9月10日为中国第一个教师节。</p><!-- more --><p><strong>预备步骤</strong>：准备素材<br>   首先我们先找到一个圆月夜晚的图片，最好是竖屏的（海报一般是竖屏），然后从网上找一个或几个艺术字体安装在电脑里。<br>   本次素材包链接：<a href="https://pan.bilnn.com/s/mMrWSx">https://pan.bilnn.com/s/mMrWSx</a><br>                    密码：1919180</p><!-- more --><p><strong>第一步</strong>：处理图片<br>   虽然我本身准备的图片质量挺不错，但是还要处理一下才好，毕竟太暗也不好。<img src="/../post-images/PS%E4%B8%AD%E7%A7%8B%E8%8A%82%E6%B5%B7%E6%8A%A5/1662782016819.PNG"><br>   我们首先调整整体的“色彩平衡”，为了体现月光，我这里把黄色拉高一点，在适当调整红色和绿色以达到平衡。调整如图：<img src="/../post-images/PS%E4%B8%AD%E7%A7%8B%E8%8A%82%E6%B5%B7%E6%8A%A5/1662782398582.PNG"><br>   接下来我们在调整“色相”，还是以黄色为主，其他颜色为主。我这里把黄色的饱和度拉高一点，其他的颜色不调，按照自己的实际情况调整，如图：<img src="/../post-images/PS%E4%B8%AD%E7%A7%8B%E8%8A%82%E6%B5%B7%E6%8A%A5/1662782899604.PNG"><br>   紧接着我们调整自然饱和度，我稍微拉高点显得温暖点，也可以拉低自然饱和度显得真实点，如图:<br>   自然饱和度调高：<img src="/../post-images/PS%E4%B8%AD%E7%A7%8B%E8%8A%82%E6%B5%B7%E6%8A%A5/1662783176712.PNG"><br>   自然饱和度调低：<img src="/../post-images/PS%E4%B8%AD%E7%A7%8B%E8%8A%82%E6%B5%B7%E6%8A%A5/1662783192510.PNG"><br>   最后我们再把总体图片稍微压暗一点，显得有夜晚的氛围，这样我们的图片就处理好了。如图：<img src="/../post-images/PS%E4%B8%AD%E7%A7%8B%E8%8A%82%E6%B5%B7%E6%8A%A5/1662786660106.PNG"></p><!-- more --><p><strong>第二步</strong>：字体排版<br>   字体的排版可以根据自己的喜好来排版，建议使用艺术字体来给祝福海报增加艺术感，这里我把我的海报展示出来给各位做个参考，如图：<img src="/../post-images/PS%E4%B8%AD%E7%A7%8B%E8%8A%82%E6%B5%B7%E6%8A%A5/1662786987113.PNG"></p><!-- more --><p><strong>结束语</strong>：<br>   好了，这次的中秋节祝福海报教程到这里就结束了，希望你们能做出一个中秋节祝福海报送给自己的朋友亲人，我先去送给我的老师去了，拜拜。😊</p>]]></content>
       
       
       
@@ -42,17 +42,36 @@
     
     
     <entry>
-      <title>关于这个博客网站</title>
-      <link href="/posts/71e7c4f4.html"/>
-      <url>/posts/71e7c4f4.html</url>
+      <title>【PS】赛博朋克风格海报制作</title>
+      <link href="/posts/8b7d70a1.html"/>
+      <url>/posts/8b7d70a1.html</url>
       
-        <content type="html"><![CDATA[<p><strong>哈哈哈，没想到还会有人来看关于这个网站！</strong></p><span id="more"></span><p>行吧，你都进来了，那我和你讲讲我本人和这个网站的经历吧。</p><!-- more --><p>😊<strong>关于博主</strong><br>五月天<br>计算机应用技术 高一<br>目前在博伦职业技术学校学习<br>主要研究方向：还没决定</p><!-- more --><p>👉<strong>关于博客</strong><br>关于这个网站的诞生历程说来话长，因为这原本是我初中就设计开始的计划。记得当时的电脑课，老师把我任命为信息课代表，因此我比班级里任何一个人更有时间接触电脑，加上初一初二的编程社团，我每天都有时间接触电脑去学习电脑的各个操作。<br>直到有一天，我在B站上看到了某个UP主的视频，他完成了自己的网站，那一天我在想，我也要制作自己的网站。正好班级需要一个我们自己的网站来纪念我们的班级。在那之后，每次在学校的电脑课完成任务后，我就开始学习网站的搭建和构造，在社团的时候也在不断实践自己的猜测。直到初三的时候，因为要参加中考，所以取消了社团和电脑课，我的计划在那个时候开始停止。<br>初三毕业了，我重新开始我的计划，可惜到了暑假结束也一直没能完成。因为github访问较难，加上我的电脑在建设中途损毁，所以我被迫重新开始。终于在2022年9月3日搭建完成！<br>就是可惜，因为之前电脑损毁，原本的班级资料也没了，所以这个网站即使建好了对班级也没有用。所以这个网站最后只能拿来作为我的博客网站使用。</p>]]></content>
+        <content type="html"><![CDATA[<p><strong>引导语</strong>：<br>   关于PS（全名Photoshop）的使用，相信很多人觉得PS使用起来有难度，实际上PS操作不难，接下来我就告诉你如何用PS制作一个赛博朋克风格的海报。</p><span id="more"></span><p><strong>赛博朋克科普</strong>：<br>   赛博朋克（<em>英文：Cyberpunk</em>）又称作“赛伯朋克”，是“控制论、神经机械学”与“朋克”的结合词。该背景大多描绘在未来，建立于“<strong>低端生活与高等科技结合</strong>”的基础上，拥有先进科学技术，再以一定程度崩坏的社会结构做对比。<br>   拥有五花八门的视觉冲击效果，<em>比如街头的霓虹灯</em>、<em>街排标志性广告</em>以及<em>高楼建筑</em>等，通常搭配色彩是以黑、紫、绿、蓝、红为主。<br>   有一款游戏就是以赛博朋克风格为主的，名字叫：赛博朋克2077.</p><!-- more --><p>   <strong>注</strong>：<em>此教程分两种阶段，能力不足的可先学习低阶之后再琢磨进阶！</em></p><!-- more --><p><strong>实操部分：图片处理</strong>（低阶）<br>   演示工具：Adobe Photoshop 2020<br>   素材使用来自：unsplash：<a href="https://unsplash.com/">https://unsplash.com/</a><br>                           此次制作素材包：<a href="https://wwm.lanzouj.com/b037eh9kb">https://wwm.lanzouj.com/b037eh9kb</a><br>                           密码:114514<br>   首先，我们打开PS，点击左边的打开，选择你的图片，这时候你来到了制作界面（操作台）。如图：<img src="/../post-images/PS%E8%B5%9B%E5%8D%9A%E6%9C%8B%E5%85%8B%E6%B5%B7%E6%8A%A5/1662353746740.PNG"><br>   接着复制一层备用，在刚复制的图层上建立“色彩平衡”，色调选项改成“中间调”，把青色，洋红，蓝色拉高。我的调整如图，可根据背景颜色灵活调整（<em>赛博朋克的主色调以蓝、绿、洋红为主</em>）<img src="/../post-images/PS%E8%B5%9B%E5%8D%9A%E6%9C%8B%E5%85%8B%E6%B5%B7%E6%8A%A5/1662356571479.PNG"><br>   紧接着建立一个“色相&#x2F;饱和度”图层，然后调整红色，青色和蓝色的色相<img src="/../post-images/PS%E8%B5%9B%E5%8D%9A%E6%9C%8B%E5%85%8B%E6%B5%B7%E6%8A%A5/1662356855277.PNG"><br>   我的色相数值：红色-33，青色-13，蓝色-26<br>   再新建一个“自然饱和度”图层，适当调整自然饱和度<img src="/../post-images/PS%E8%B5%9B%E5%8D%9A%E6%9C%8B%E5%85%8B%E6%B5%B7%E6%8A%A5/1662357709973.PNG"><br>   颜色差不多快调整完了，接下来就是把图片的色调整体暗下来，因为赛博朋克的色彩基本都在夜晚中展现的。<br>   新建“曲线”图层，适当压暗背景，如图<img src="/../post-images/PS%E8%B5%9B%E5%8D%9A%E6%9C%8B%E5%85%8B%E6%B5%B7%E6%8A%A5/1662357758029.PNG"><br>   如果你成功处理好了一张图片，那么现在你可以尝试进阶操作了！</p><!-- more --><p><strong>实操部分：海报制作</strong>（进阶）<br>   首先我们要安装road rage字体（素材包里面有），在图片中放入文字，编排文字，给字体加一些效果，如图：<img src="/../post-images/PS%E8%B5%9B%E5%8D%9A%E6%9C%8B%E5%85%8B%E6%B5%B7%E6%8A%A5/1662360215014.PNG"><br>   这一部分需要自己去摸索，只有学会了才是自己的东西。（才不是因为懒.jpg</p><!-- more --><p><strong>结束语</strong>：<br>   关于赛博朋克风格海报制作过程到这里就结束了，这一类型的风格主要是依靠色调和明度为主，总体来说较为简单。多去练习PS的基础操作，相信你可以自己研究出其他有趣的风格的！</p>]]></content>
       
       
       
         <tags>
             
-            <tag> about </tag>
+            <tag> 个人经验 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>关于硬盘分区的过程</title>
+      <link href="/posts/613f4b9d.html"/>
+      <url>/posts/613f4b9d.html</url>
+      
+        <content type="html"><![CDATA[<p>在最近几节网课中，我的同学还是有部分不会硬盘分区的操作，所以我这次写一篇文章，讲一下关于硬盘分区的操作流程。<br>提示：如果想直接进行实操的话，请使用虚拟硬盘进行操作，<strong>否则可能对您的硬盘进行不可逆的损坏！</strong></p><span id="more"></span><p> <em><strong>预备步骤：创建虚拟硬盘</strong></em>（若已学会请跳过）<br>右击此电脑（win7是计算机），选择管理。<img src="/../post-images/%E7%A1%AC%E7%9B%98%E5%88%86%E5%8C%BA%E7%9A%84%E8%BF%87%E7%A8%8B/1662208807509.PNG"><br>这时候你已经完成一半了，因为你进入了计算机管理。接下来一定要按照步骤做！（因为不按照步骤做会出现问题）<br>在左边的菜单点击储存→磁盘管理，稍等一下后点击上方的操作，再点击创造VHD。<img src="/../post-images/%E7%A1%AC%E7%9B%98%E5%88%86%E5%8C%BA%E7%9A%84%E8%BF%87%E7%A8%8B/1662209449064.PNG"><br>在这里，我们就可以创造我们的虚拟硬盘了！位置的浏览按钮是你虚拟硬盘保存的位置，虚拟硬盘大小记得注意单位。<img src="/../post-images/%E7%A1%AC%E7%9B%98%E5%88%86%E5%8C%BA%E7%9A%84%E8%BF%87%E7%A8%8B/1662209777726.PNG"><br>创建好后，在计算机管理→储存→磁盘服务→操作中选择附加VHD，点击浏览，找到刚刚创建完的VHD虚拟硬盘，这时候你会发现，电脑新加入了一个硬盘，但是没有空间显示，接着往下看！<br> <strong>第一步：准备好需要使用的程序</strong><br>我们所需要的程序有两个：一个是DiskGenius，另一个是WinHex。<img src="/../post-images/%E7%A1%AC%E7%9B%98%E5%88%86%E5%8C%BA%E7%9A%84%E8%BF%87%E7%A8%8B/1662207666097.png"><br>考虑到有部分人没有以上程序，我现在打包好放在了蓝奏云里，有需要自取：<br>蓝奏云：<a href="https://wwm.lanzouj.com/b037ea91a">https://wwm.lanzouj.com/b037ea91a</a><br>密码:sfdm<br>在这里我们只是使用名叫DiskGenius的程序就行了，WinHex以后再用！<img src="/../post-images/%E7%A1%AC%E7%9B%98%E5%88%86%E5%8C%BA%E7%9A%84%E8%BF%87%E7%A8%8B/1662210142413.PNG"><br> <strong>第二步：使用DiskGenius给硬盘进行分区</strong><br>首先先解压我们的DiskGenius的压缩包（没有解压软件的自行下载winrar），然后在解压出来的文件中找到DiskGenius应用程序。<img src="/../post-images/%E7%A1%AC%E7%9B%98%E5%88%86%E5%8C%BA%E7%9A%84%E8%BF%87%E7%A8%8B/1662210666592.PNG"><br>接着打开DiskGenius，选择你的虚拟硬盘，因为是刚刚创建的VHD虚拟硬盘，所以是没有任何东西并且没有分区。（在DiskGenius上显示的是空闲，有分区就要注意是不是刚刚创好的的虚拟硬盘）鼠标右键“空闲”区域，选择“建立新分区”。<img src="/../post-images/%E7%A1%AC%E7%9B%98%E5%88%86%E5%8C%BA%E7%9A%84%E8%BF%87%E7%A8%8B/1662211058092.PNG"><br>接着你只要在“新分区大小”中输入你需要给这个虚拟硬盘分出的内存即可（不可超过虚拟硬盘的最大内存），我这里分出了一个200GB的分区和一个300GB的分区。<br>最后记得点击右上角的保存更改就OK了！<img src="/../post-images/%E7%A1%AC%E7%9B%98%E5%88%86%E5%8C%BA%E7%9A%84%E8%BF%87%E7%A8%8B/1662211173672.PNG"><br> <strong>第三步：弹出VHD虚拟硬盘</strong><br>因为虚拟硬盘对电脑可能会有一点影响，所以最后还是让VHD虚拟硬盘弹出电脑好一点。<br>还是老样子，在计算机管理→储存→磁盘管理中鼠标右击虚拟硬盘，点击分离VHD虚拟硬盘。<img src="/../post-images/%E7%A1%AC%E7%9B%98%E5%88%86%E5%8C%BA%E7%9A%84%E8%BF%87%E7%A8%8B/1662211820692.PNG"><br>最后点击确定即可！</p><!-- more --><p> <strong>结束语</strong><br>关于计算机应用这门技术，我个人的感觉也不多，但是无论哪一门专业，都是一个道理：只有坚持下来的人才是胜者！所以，希望我的同学们能认真学习每一堂课，成绩步步高升！无论以前多么不如人意，从现在开始，做好每一天的自己，让现在的自己比以前的自己更强！</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 个人经验 </tag>
             
         </tags>
       
@@ -61,6 +80,28 @@
     
   
   
+    
+    
+    <entry>
+      <title>categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>关于这个博客网站</title>
+      <link href="/heart/index.html"/>
+      <url>/heart/index.html</url>
+      
+        <content type="html"><![CDATA[<p><strong>哈哈哈，没想到还会有人来看关于这个网站！</strong></p><span id="more"></span><p>行吧，你都进来了，那我和你讲讲我本人和这个网站的经历吧。</p><!-- more --><p>😊<strong>关于博主</strong><br>五月天<br>计算机应用技术 高一<br>目前在博伦职业技术学校学习<br>主要研究方向：还没决定</p><!-- more --><p>👉<strong>关于博客</strong><br>关于这个网站的诞生历程说来话长，因为这原本是我初中就设计开始的计划。记得当时的电脑课，老师把我任命为信息课代表，因此我比班级里任何一个人更有时间接触电脑，加上初一初二的编程社团，我每天都有时间接触电脑去学习电脑的各个操作。<br>直到有一天，我在B站上看到了某个UP主的视频，他完成了自己的网站，那一天我在想，我也要制作自己的网站。正好班级需要一个我们自己的网站来纪念我们的班级。在那之后，每次在学校的电脑课完成任务后，我就开始学习网站的搭建和构造，在社团的时候也在不断实践自己的猜测。直到初三的时候，因为要参加中考，所以取消了社团和电脑课，我的计划在那个时候开始停止。<br>初三毕业了，我重新开始我的计划，可惜到了暑假结束也一直没能完成。因为github访问较难，加上我的电脑在建设中途损毁，所以我被迫重新开始。终于在2022年9月3日搭建完成！<br>就是可惜，因为之前电脑损毁，原本的班级资料也没了，所以这个网站即使建好了对班级也没有用。所以这个网站最后只能拿来作为我的博客网站使用。</p>]]></content>
+      
+    </entry>
+    
     
     
     <entry>
@@ -80,17 +121,6 @@
       <url>/css/custom.css</url>
       
         <content type="html"><![CDATA[/* @font-face {  font-family: Candyhome;  src: url(https://npm.elemecdn.com/anzhiyu-blog@1.1.6/fonts/Candyhome.ttf);  font-display: swap;  font-weight: lighter;} */@font-face {    font-family: ZhuZiAYuanJWD;    src: url(https://npm.elemecdn.com/anzhiyu-blog@1.1.6/fonts/ZhuZiAWan.woff2);    font-display: swap;    font-weight: lighter;  }    div#menus {    font-family: 'ZhuZiAYuanJWD';  }  h1#site-title {    font-family: ZhuZiAYuanJWD;    font-size: 3em !important;  }  a.article-title,  a.blog-slider__title,  a.categoryBar-list-link,  h1.post-title {    font-family: ZhuZiAYuanJWD;  }    .iconfont {    font-family: 'iconfont' !important;    font-size: 3em;    /* 可以定义图标大小 */    font-style: normal;    -webkit-font-smoothing: antialiased;    -moz-osx-font-smoothing: grayscale;  }    /* 时间轴生肖icon */  svg.icon {    /* 这里定义svg.icon，避免和Butterfly自带的note标签冲突 */    width: 1em;    height: 1em;    /* width和height定义图标的默认宽度和高度*/    vertical-align: -0.15em;    fill: currentColor;    overflow: hidden;  }    .icon-zhongbiao::before {    color: #f7c768;  }    /* bilibli番剧插件 */  #article-container .bangumi-tab.bangumi-active {    background: var(--anzhiyu-theme);    color: var(--anzhiyu-ahoverbg);    border-radius: 10px;  }  a.bangumi-tab:hover {    text-decoration: none !important;  }  .bangumi-button:hover {    background: var(--anzhiyu-theme) !important;    border-radius: 10px !important;    color: var(--anzhiyu-ahoverbg) !important;  }  a.bangumi-button.bangumi-nextpage:hover {    text-decoration: none !important;  }  .bangumi-button {    padding: 5px 10px !important;  }    a.bangumi-tab {    padding: 5px 10px !important;  }  svg.icon.faa-tada {    font-size: 1.1em;  }  .bangumi-info-item {    border-right: 1px solid #f2b94b;  }  .bangumi-info-item span{    color: #f2b94b;  }  .bangumi-info-item em{    color: #f2b94b;  }    /* 解决artitalk的图标问题 */  #uploadSource > svg {    width: 1.19em;    height: 1.5em;  }    /*top-img黑色透明玻璃效果移除，不建议加，除非你执着于完全一图流或者背景图对比色明显 */  #page-header:not(.not-top-img):before {    background-color: transparent !important;  }    /* 首页文章卡片 */  #recent-posts > .recent-post-item {    background: rgba(255, 255, 255, 0.9);  }    /* 首页侧栏卡片 */  #aside-content .card-widget {    background: rgba(255, 255, 255, 0.9);  }    /* 文章页面正文背景 */  div#post {    background: rgba(255, 255, 255, 0.9);  }    /* 分页页面 */  div#page {    background: rgba(255, 255, 255, 0.9);  }    /* 归档页面 */  div#archive {    background: rgba(255, 255, 255, 0.9);  }    /* 标签页面 */  div#tag {    background: rgba(255, 255, 255, 0.9);  }    /* 分类页面 */  div#category {    background: rgba(255, 255, 255, 0.9);  }    /*夜间模式伪类遮罩层透明*/  [data-theme='dark'] #recent-posts > .recent-post-item {    background: #121212;  }    [data-theme='dark'] .card-widget {    background: #121212 !important;  }    [data-theme='dark'] div#post {    background: #121212 !important;  }    [data-theme='dark'] div#tag {    background: #121212 !important;  }    [data-theme='dark'] div#archive {    background: #121212 !important;  }    [data-theme='dark'] div#page {    background: #121212 !important;  }    [data-theme='dark'] div#category {    background: #121212 !important;  }    [data-theme='dark'] div#category {    background: transparent !important;  }  /* 页脚透明 */  #footer {    background: transparent !important;  }    /* 头图透明 */  #page-header {    background: transparent !important;  }    #rightside > div > button {    border-radius: 5px;  }    /* 滚动条 */    ::-webkit-scrollbar {    width: 10px;    height: 10px;  }    ::-webkit-scrollbar-thumb {    background-color: #425aef;    border-radius: 2em;  }    ::-webkit-scrollbar-corner {    background-color: transparent;  }    ::-moz-selection {    color: #fff;    background-color: #425aef;  }    /* 音乐播放器 */    /* .aplayer .aplayer-lrc {    display: none !important;  } */    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {    left: -66px !important;    transition: all 0.3s;    /* 默认情况下缩进左侧66px，只留一点箭头部分 */  }    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {    left: 0 !important;    transition: all 0.3s;    /* 鼠标悬停是左侧缩进归零，完全显示按钮 */  }    .aplayer.aplayer-fixed {    z-index: 999999 !important;  }    /* 评论框  */  .vwrap {    box-shadow: 2px 2px 5px #bbb;    background: rgba(255, 255, 255, 0.3);    border-radius: 8px;    padding: 30px;    margin: 30px 0px 30px 0px;  }    /* 设置评论框 */    .vcard {    box-shadow: 2px 2px 5px #bbb;    background: rgba(255, 255, 255, 0.3);    border-radius: 8px;    padding: 30px;    margin: 30px 0px 0px 0px;  }    /* 鼠标图标 */  body {    cursor: url('/img/x1.cur'), auto;  }  a,  [type='button']:not(:disabled),  [type='reset']:not(:disabled),  [type='submit']:not(:disabled),  button:not(:disabled) {    cursor: url('/img/x2.cur'), auto !important;  }  /* md网站下划线 */  #article-container a:hover {    text-decoration: none !important;  }    #article-container #hpp_talk p img {    display: inline;  }    /* 404页面 */  #error-wrap {    position: absolute;    top: 40%;    right: 0;    left: 0;    margin: 0 auto;    padding: 0 1rem;    max-width: 1000px;    transform: translate(0, -50%);  }    #error-wrap .error-content {    display: flex;    flex-direction: row;    justify-content: center;    align-items: center;    margin: 0 1rem;    height: 18rem;    border-radius: 8px;    background: var(--card-bg);    box-shadow: var(--card-box-shadow);    transition: all 0.3s;  }    #error-wrap .error-content .error-img {    box-flex: 1;    flex: 1;    height: 100%;    border-top-left-radius: 8px;    border-bottom-left-radius: 8px;    background-color: #425aef;    background-position: center;    background-size: cover;  }    #error-wrap .error-content .error-info {    box-flex: 1;    flex: 1;    padding: 0.5rem;    text-align: center;    font-size: 14px;    font-family: Titillium Web, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft JhengHei', 'Microsoft YaHei', sans-serif;  }  #error-wrap .error-content .error-info .error_title {    margin-top: -4rem;    font-size: 9em;  }  #error-wrap .error-content .error-info .error_subtitle {    margin-top: -3.5rem;    word-break: break-word;    font-size: 1.6em;  }  #error-wrap .error-content .error-info a {    display: inline-block;    margin-top: 0.5rem;    padding: 0.3rem 1.5rem;    background: var(--btn-bg);    color: var(--btn-color);  }    #body-wrap.error .aside-list {    display: flex;    flex-direction: row;    flex-wrap: nowrap;    bottom: 0px;    position: absolute;    padding: 1rem;    width: 100%;    overflow: scroll;  }    #body-wrap.error .aside-list .aside-list-group {    display: flex;    flex-direction: row;    flex-wrap: nowrap;    max-width: 1200px;    margin: 0 auto;  }    #body-wrap.error .aside-list .aside-list-item {    padding: 0.5rem;  }    #body-wrap.error .aside-list .aside-list-item img {    width: 100%;    object-fit: cover;    border-radius: 12px;  }    #body-wrap.error .aside-list .aside-list-item .thumbnail {    overflow: hidden;    width: 230px;    height: 143px;    background: var(--heo-card-bg);    display: flex;  }    #body-wrap.error .aside-list .aside-list-item .content .title {    -webkit-line-clamp: 2;    overflow: hidden;    display: -webkit-box;    -webkit-box-orient: vertical;    line-height: 1.5;    justify-content: center;    align-items: flex-end;    align-content: center;    padding-top: 0.5rem;    color: white;  }    #body-wrap.error .aside-list .aside-list-item .content time {    display: none;  }    /* 代码框主题 */  #article-container figure.highlight {    border-radius: 10px;  }  ]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>categories</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
