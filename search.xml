@@ -4,11 +4,30 @@
   
     
     <entry>
-      <title>修复硬盘日常-硬盘分区表(NTFS)</title>
+      <title>提取NTFS分区的文件</title>
+      <link href="/posts/a8a1ffbc.html"/>
+      <url>/posts/a8a1ffbc.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="引导语"><a href="#引导语" class="headerlink" title="引导语"></a><em><strong>引导语</strong></em></h2><p>最近我算是闲的没事(bushi)写一篇关于如何提取NTFS分区文件的文章。主要是最近很多人还是不会怎么去修复NTFS分区并提取，如果学会了修复NTFS分区的话，可以学习一下怎么提取文件。<br>注：如果没学过<em><strong>WinHex</strong></em>的基础操作的话，建议先看我以前的<a href="https://darkenedskye.github.io/posts/613f4b9d.html">硬盘分区</a>文章在学习这篇文章。</p><span id="more"></span><h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><h3 id="第一步，寻找NTFS分区"><a href="#第一步，寻找NTFS分区" class="headerlink" title="第一步，寻找NTFS分区"></a>第一步，寻找NTFS分区</h3><p>首先，你要有<em><strong>WinHex</strong></em>这个软件，没有的可以找我以前的一篇<a href="https://darkenedskye.github.io/posts/613f4b9d.html">硬盘分区</a>的文章，里面有安装包。<br>根据这次定的目标，这次我们需要提取666.doc的文件。<br>接着，用WinHex打开我们需要提取数据的硬盘，找到我们的NTFS分区的DBR，找到我们的分区簇数，如图：<img src="/%E6%8F%90%E5%8F%96NTFS%E5%88%86%E5%8C%BA%E7%9A%84%E6%96%87%E4%BB%B6/1.jpg"></p><!--more--><h3 id="第二步：寻找NFTS分区的文件"><a href="#第二步：寻找NFTS分区的文件" class="headerlink" title="第二步：寻找NFTS分区的文件"></a>第二步：寻找NFTS分区的文件</h3><p>记住我们的分区簇数后，我们就要去找他的用户的文件目录，方法是在这个NTFS分区的主MFT元文件向下偏移70个扇区（如果分区簇数是08可以从DBR向下偏移6291456个扇区就可以到主MFT）计算的公式在我的<a href="https://darkenedskye.github.io/posts/613f4b9d.html">硬盘分区</a>文章有说过。<br>找到文件目录后，用搜索(Ctrl+F)查找文件名，找到”FF FF FF FF”前8个字节，找到<em><strong>文件位置</strong></em>和<em><strong>文件大小</strong></em>，如图：<img src="/%E6%8F%90%E5%8F%96NTFS%E5%88%86%E5%8C%BA%E7%9A%84%E6%96%87%E4%BB%B6/2.jpg"><br>在数据解释器中复制他们的十进制值(一个字节8bit，两个字节16bit，以此类推)然后乘分区簇数得出位置和大小<br>计算公式：文件位置&#x2F;文件大小的十进制值×分区簇数&#x3D;文件位置&#x2F;文件大小<br>我这里计算的文件位置是63656<br>文件大小是56</p><!--more--><h3 id="第三步：提取NTFS分区的文件"><a href="#第三步：提取NTFS分区的文件" class="headerlink" title="第三步：提取NTFS分区的文件"></a>第三步：提取NTFS分区的文件</h3><p>回到NTFS的DBR，向下偏移刚刚计算的文件的位置数值（以扇区为单位偏移），给当前扇区的第一个字节右键，做一个***”选块起始”<em><strong>，然后偏移刚刚计算的文件的大小数值（同样以扇区为单位偏移）。在当前扇区的最后一个字节做一个”选块结束”，最后在被框选的区域鼠标右键→编辑→复制选块→至新文件，保存你提取的文件，文件名填写找到的</strong></em>文件名字<em><strong>（</strong></em>后缀名也要加上！！！***）<br>我提取出来的文档是这个(doge)：<img src="/%E6%8F%90%E5%8F%96NTFS%E5%88%86%E5%8C%BA%E7%9A%84%E6%96%87%E4%BB%B6/3.JPG"></p><h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>WinHex这个软件在数据恢复占重要地位，所以有时间的话自己可以模拟一个硬盘自己练习。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 数据恢复 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>修复硬盘日常-硬盘分区表</title>
       <link href="/posts/1b18a8f.html"/>
       <url>/posts/1b18a8f.html</url>
       
-        <content type="html"><![CDATA[<h2 id="引导语"><a href="#引导语" class="headerlink" title="引导语"></a><em><strong>引导语</strong></em></h2><p>众所周知，数据无论是对于服务器还是个体上而言都是非常重要的存在。服务器通过处理数据达到我们需要的效果，而我们个体而言，常用的就是电脑，今天我写这篇文章的原因，也是因为我邻居最近整虚拟硬盘实操数据恢复，结果把自己的硬盘整没了。（悲</p><span id="more"></span><h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><h3 id="预备步骤：WinHex与了解MBR结构"><a href="#预备步骤：WinHex与了解MBR结构" class="headerlink" title="预备步骤：WinHex与了解MBR结构"></a>预备步骤：WinHex与了解MBR结构</h3><h4 id="Winhex"><a href="#Winhex" class="headerlink" title="Winhex"></a>Winhex</h4><p>我们需要用到的工具是WinHex，如果没有的可以找我之前一个硬盘分区的文章，那里面有这个软件的打包。主要是查看和修改硬盘的底层数据的。</p><h4 id="MBR结构"><a href="#MBR结构" class="headerlink" title="MBR结构"></a>MBR结构</h4><p>主引导记录的英文简称MBR<br>MBR扇区位于整个硬盘的第一个扇区，即0号扇区，是一个特殊且重要的扇区，由四部分构成：<br>(1)引导程序<br>引导程序占用其中的前440字节，其地址在偏移0-1B7H处。<br>(2)Windows磁盘签名<br>占用4个字节，地址在偏移1B8H-偏移1BBH处，是Windows系统对硬盘初始化时写入的一个磁盘标签<br>(3)分区表<br>偏移1BEH-偏移1FDH的64字节为硬盘分区表(DPT)，这是MBR中非常重要的一个结构，你也可以认为是0扇区倒数第66字节开始64个字节。<em><strong>（本次修复的目标）</strong></em><br>(4)结束标志<br>扇区最后的两个字节“55 AA”(偏移1FEH-偏移1FFH)是MBR的结束标志。<br>结构如图：<img src="https://s1.ax1x.com/2022/10/04/xlA8O0.jpg"></p><h3 id="第一步：分析硬盘情况"><a href="#第一步：分析硬盘情况" class="headerlink" title="第一步：分析硬盘情况"></a>第一步：分析硬盘情况</h3><p>因为这次比较简单，只是分区表出了问题，所以只要修复分区表即可<br>首先我们先分析这个分区表的结构，如图：<img src="https://s1.ax1x.com/2022/10/04/xlAtTU.jpg"></p><h3 id="第二步：修复分区表"><a href="#第二步：修复分区表" class="headerlink" title="第二步：修复分区表"></a>第二步：修复分区表</h3><p>首先在分区表开始四个字节填上“80 20 21 00”（固定字节，如果修复的分区没有系统分区可以80改成00），往后开始填写分区属性，有以下几个分区属性：<br>07|NTFS、exFAT<br>08|FAT32<br>0C|FAT32<br>83|Ext3、Ext4<br>EE|GPT<br>向下查找“非零”(Ctrl+Alt+X填写”!00”)，如图：<img src="https://s1.ax1x.com/2022/10/04/xlALtg.jpg"></p><p>这时候我们来到了第一个分区的DBR，你会发现右边写着NTFS，代表着这个是NTFS分区。这里有分区簇数、分区位置和分区大小（第一个分区位置通常是第2048个扇区），如图：<img src="https://s1.ax1x.com/2022/10/04/xlET29.jpg"><br>如果只是像以上这种情况的话，你只需要把这些数据复制下来再回到MBR填写回去就可以了，但是一般都会把容量抹掉的，所以我们还要学会怎么查找容量以及每个分区的位置。</p><h3 id="第三步：寻找分区容量"><a href="#第三步：寻找分区容量" class="headerlink" title="第三步：寻找分区容量"></a>第三步：寻找分区容量</h3><p>在分区的DBR向下偏移16个扇区（偏移快捷键：Alt+G）跳到这个分区的次MFT元文件，找到第0列或者第8列的“80”字节，如图：<img src="https://s1.ax1x.com/2022/10/04/xlm9xJ.jpg"><br>向下4行字节可以看到主MFT元文件的位置，如图并把相应位置转换成10进制：<img src="https://s1.ax1x.com/2022/10/04/xlnUk6.jpg"><br>接着就可以计算主MFT的位置了<br><em><strong>计算公式：在次MFT转换的10进制数值×分区簇数&#x3D;主MFT元文件位置（通常是6291456个扇区）</strong></em><br>向下偏移6291456个扇区来到了主MFT，你会发现这里的内容和次MFT一毛一样，所以你如果次MFT没了的话你可以尝试直接在DBR偏移6291456把主MFT的内容复制过来。（也可以用公式反推分区簇数）<br>在主MFT向下偏移12个扇区，就来到了Bitmap元文件分区，如图：<img src="https://s1.ax1x.com/2022/10/04/xlnv3F.jpg"><br>找到“FF FF FF FF”正上方的4个字节，转换成10进制，进行以下公式的计算：<br><em><strong>分区容量计算公式：“FF FF FF FF”正上方4个字节转换的10进制数值×8（固定值）×分区簇数&#x3D;此分区容量</strong></em><br>计算出来了后，我们可以用WinHex自带的数据解释器回到DBR和MBR进行修改填写，也可以进行上面的数值转换。<br>PS:DBR填写时需要将计算出来的结果减1</p><h3 id="第四步：寻找全部硬盘分区"><a href="#第四步：寻找全部硬盘分区" class="headerlink" title="第四步：寻找全部硬盘分区"></a>第四步：寻找全部硬盘分区</h3><p>如果所有都是主磁盘分区的话，那么一个硬盘最多只有四个分区（扩展分区除外）。所以我们只要按照上面的方法一个一个修复即可，寻找下一个的位置计算公式如下：<br>此分区位置转换10进制数值+此分区位置转换10进制数值&#x3D;下一个分区的位置<br>如果按着这个方法向下偏移后看到的全是00或者出现了“不包含偏移量”的提示的话，就代表没有其他分区了。<br>最后只要在MBR（0扇区）最后填上“55 AA”即可</p><!--more--><h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a><em><strong>结束语</strong></em></h2><p>没什么好说的，这个在数据恢复中是比较基础的一门课程，主要是帮助理解DBR和MBR的，希望看到这篇文章的人都能学会！</p>]]></content>
+        <content type="html"><![CDATA[<h2 id="引导语"><a href="#引导语" class="headerlink" title="引导语"></a><em><strong>引导语</strong></em></h2><p>众所周知，数据无论是对于服务器还是个体上而言都是非常重要的存在。服务器通过处理数据达到我们需要的效果，而我们个体而言，常用的就是电脑，今天我写这篇文章的原因，也是因为我邻居最近整虚拟硬盘实操数据恢复，结果把自己的硬盘整没了。（悲</p><span id="more"></span><h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><h3 id="预备步骤：WinHex与了解MBR结构"><a href="#预备步骤：WinHex与了解MBR结构" class="headerlink" title="预备步骤：WinHex与了解MBR结构"></a>预备步骤：WinHex与了解MBR结构</h3><h4 id="Winhex"><a href="#Winhex" class="headerlink" title="Winhex"></a>Winhex</h4><p>我们需要用到的工具是WinHex，如果没有的可以找我之前一个<a href="https://darkenedskye.github.io/posts/613f4b9d.html">硬盘分区</a>的文章，那里面有这个软件的打包。主要是查看和修改硬盘的底层数据的。</p><h4 id="MBR结构"><a href="#MBR结构" class="headerlink" title="MBR结构"></a>MBR结构</h4><p>主引导记录的英文简称MBR<br>MBR扇区位于整个硬盘的第一个扇区，即0号扇区，是一个特殊且重要的扇区，由四部分构成：<br>(1)引导程序<br>引导程序占用其中的前440字节，其地址在偏移0-1B7H处。<br>(2)Windows磁盘签名<br>占用4个字节，地址在偏移1B8H-偏移1BBH处，是Windows系统对硬盘初始化时写入的一个磁盘标签<br>(3)分区表<br>偏移1BEH-偏移1FDH的64字节为硬盘分区表(DPT)，这是MBR中非常重要的一个结构，你也可以认为是0扇区倒数第66字节开始64个字节。<em><strong>（本次修复的目标）</strong></em><br>(4)结束标志<br>扇区最后的两个字节“55 AA”(偏移1FEH-偏移1FFH)是MBR的结束标志。<br>结构如图：<img src="https://s1.ax1x.com/2022/10/04/xlA8O0.jpg"></p><h3 id="第一步：分析硬盘情况"><a href="#第一步：分析硬盘情况" class="headerlink" title="第一步：分析硬盘情况"></a>第一步：分析硬盘情况</h3><p>因为这次比较简单，只是分区表出了问题，所以只要修复分区表即可<br>首先我们先分析这个分区表的结构，如图：<img src="https://s1.ax1x.com/2022/10/04/xlAtTU.jpg"></p><h3 id="第二步：修复分区表"><a href="#第二步：修复分区表" class="headerlink" title="第二步：修复分区表"></a>第二步：修复分区表</h3><p>首先在分区表开始四个字节填上“80 20 21 00”（固定字节，如果修复的分区没有系统分区可以80改成00），往后开始填写分区属性，有以下几个分区属性：</p><!--more--><p>07|NTFS、exFAT</p><!--more--><p>08|FAT32</p><!--more--><p>0C|FAT32</p><!--more--><p>83|Ext3、Ext4</p><!--more--><p>EE|GPT</p><!--more--><p>向下查找“非零”(Ctrl+Alt+X填写”!00”)，如图：</p><!--more--><p><img src="https://s1.ax1x.com/2022/10/04/xlALtg.jpg"></p><p>这时候我们来到了第一个分区的DBR，你会发现右边写着NTFS，代表着这个是NTFS分区。这里有分区簇数、分区位置和分区大小（第一个分区位置通常是第2048个扇区），如图：<img src="https://s1.ax1x.com/2022/10/04/xlET29.jpg"></p><p>如果只是像以上这种情况的话，你只需要把这些数据复制下来再回到MBR填写回去就可以了，但是一般都会把容量抹掉的，所以我们还要学会怎么查找容量以及每个分区的位置。</p><h3 id="第三步：寻找分区容量"><a href="#第三步：寻找分区容量" class="headerlink" title="第三步：寻找分区容量"></a>第三步：寻找分区容量</h3><p>在分区的DBR向下偏移16个扇区（偏移快捷键：Alt+G）跳到这个分区的次MFT元文件，找到第0列或者第8列的“80”字节，如图：</p><!--more--><p><img src="https://s1.ax1x.com/2022/10/04/xlm9xJ.jpg"></p><!--more--><p>向下4行字节可以看到主MFT元文件的位置，如图并把相应位置转换成10进制：</p><!--more--><p><img src="https://s1.ax1x.com/2022/10/04/xlnUk6.jpg"></p><!--more--><p>接着就可以计算主MFT的位置了<br><em><strong>计算公式：在次MFT转换的10进制数值×分区簇数&#x3D;主MFT元文件位置（通常是6291456个扇区）</strong></em><br>向下偏移6291456个扇区来到了主MFT，你会发现这里的内容和次MFT一毛一样，所以你如果次MFT没了的话你可以尝试直接在DBR偏移6291456把主MFT的内容复制过来。（也可以用公式反推分区簇数）<br>在主MFT向下偏移12个扇区，就来到了Bitmap元文件分区，如图：<img src="https://s1.ax1x.com/2022/10/04/xlnv3F.jpg"><br>找到“FF FF FF FF”正上方的4个字节，转换成10进制，进行以下公式的计算：<br><em><strong>分区容量计算公式：“FF FF FF FF”正上方4个字节转换的10进制数值×8（固定值）×分区簇数&#x3D;此分区容量</strong></em><br>计算出来了后，我们可以用WinHex自带的数据解释器回到DBR和MBR进行修改填写，也可以进行上面的数值转换。<br>PS:DBR填写时需要将计算出来的结果减1</p><h3 id="第四步：寻找全部硬盘分区"><a href="#第四步：寻找全部硬盘分区" class="headerlink" title="第四步：寻找全部硬盘分区"></a>第四步：寻找全部硬盘分区</h3><p>如果所有都是主磁盘分区的话，那么一个硬盘最多只有四个分区（扩展分区除外）。所以我们只要按照上面的方法一个一个修复即可，寻找下一个的位置计算公式如下：<br>此分区位置转换10进制数值+此分区位置转换10进制数值&#x3D;下一个分区的位置<br>如果按着这个方法向下偏移后看到的全是00或者出现了“不包含偏移量”的提示的话，就代表没有其他分区了。<br>最后只要在MBR（0扇区）最后填上“55 AA”即可</p><!--more--><h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a><em><strong>结束语</strong></em></h2><p>没什么好说的，这个在数据恢复中是比较基础的一门课程，主要是帮助理解DBR和MBR的，希望看到这篇文章的人都能学会！</p>]]></content>
       
       
       
@@ -135,11 +154,11 @@
     
     
     <entry>
-      <title>音乐馆</title>
-      <link href="/music/index.html"/>
-      <url>/music/index.html</url>
+      <title>标籤</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
-        <content type="html"><![CDATA[<h2>我的音乐收藏</h2><p><strong>2022&#x2F;9&#x2F;05</strong></p><h3 id="数据都是虚拟的，也是真实的-✨"><a href="#数据都是虚拟的，也是真实的-✨" class="headerlink" title="数据都是虚拟的，也是真实的 ✨"></a>数据都是虚拟的，也是真实的 ✨</h3>  <div class="aplayer no-destroy" data-id="7354610570" data-server="netease" data-type="playlist"   data-order="list" data-preload="auto" data-autoplay="false" data-mutex="true" ></div>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -157,11 +176,11 @@
     
     
     <entry>
-      <title>标籤</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>音乐馆</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<h2>我的音乐收藏</h2><p><strong>2022&#x2F;9&#x2F;05</strong></p><h3 id="数据都是虚拟的，也是真实的-✨"><a href="#数据都是虚拟的，也是真实的-✨" class="headerlink" title="数据都是虚拟的，也是真实的 ✨"></a>数据都是虚拟的，也是真实的 ✨</h3>  <div class="aplayer no-destroy" data-id="7354610570" data-server="netease" data-type="playlist"   data-order="list" data-preload="auto" data-autoplay="false" data-mutex="true" ></div>]]></content>
       
     </entry>
     
