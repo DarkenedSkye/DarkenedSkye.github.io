@@ -154,17 +154,6 @@
     
     
     <entry>
-      <title>音乐馆</title>
-      <link href="/music/index.html"/>
-      <url>/music/index.html</url>
-      
-        <content type="html"><![CDATA[<h2>我的音乐收藏</h2><p><strong>2022&#x2F;9&#x2F;05</strong></p><h3 id="数据都是虚拟的，也是真实的-✨"><a href="#数据都是虚拟的，也是真实的-✨" class="headerlink" title="数据都是虚拟的，也是真实的 ✨"></a>数据都是虚拟的，也是真实的 ✨</h3>  <div class="aplayer no-destroy" data-id="7354610570" data-server="netease" data-type="playlist"   data-order="list" data-preload="auto" data-autoplay="false" data-mutex="true" ></div>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>友链</title>
       <link href="/link/index.html"/>
       <url>/link/index.html</url>
@@ -181,6 +170,17 @@
       <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>音乐馆</title>
+      <link href="/music/index.html"/>
+      <url>/music/index.html</url>
+      
+        <content type="html"><![CDATA[<h2>我的音乐收藏</h2><p><strong>2022&#x2F;9&#x2F;05</strong></p><h3 id="数据都是虚拟的，也是真实的-✨"><a href="#数据都是虚拟的，也是真实的-✨" class="headerlink" title="数据都是虚拟的，也是真实的 ✨"></a>数据都是虚拟的，也是真实的 ✨</h3>  <div class="aplayer no-destroy" data-id="7354610570" data-server="netease" data-type="playlist"   data-order="list" data-preload="auto" data-autoplay="false" data-mutex="true" ></div>]]></content>
       
     </entry>
     
