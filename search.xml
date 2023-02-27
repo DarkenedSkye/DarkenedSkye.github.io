@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>电脑的实用工具</title>
+      <link href="/posts/de0d5c61.html"/>
+      <url>/posts/de0d5c61.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="引导语："><a href="#引导语：" class="headerlink" title="引导语："></a><strong>引导语</strong>：</h2><p>最近我在公司里面整到了一些电脑的配件，因为我以前的垃圾电脑还在，所以我把我之前的那个垃圾电脑给复活了。顺便把我之前的用的一些小工具给各位推荐一下。</p><span id="more"></span><h2 id="软件"><a href="#软件" class="headerlink" title="软件:"></a>软件:</h2><h3 id="Office-Tool-Plus"><a href="#Office-Tool-Plus" class="headerlink" title="Office Tool Plus"></a>Office Tool Plus</h3><p>官网链接：<br>Office Tool Plus是一个可以进行一键部署Office全家桶的工具箱，它集下载、安装、激活、安装许可证等功能一体，可以使你傻瓜式安装适合自己的Office。支持32位和64位，并且在作者的博客和软件中有新手教程。</p><p>软件界面截图：<br><img src="/../post-images/%E5%AE%9E%E7%94%A8%E5%B0%8F%E5%B7%A5%E5%85%B7%E5%90%88%E9%9B%86/666.JPG"></p><!--more--><h3 id="Windows-Update-Blocker"><a href="#Windows-Update-Blocker" class="headerlink" title="Windows Update Blocker"></a>Windows Update Blocker</h3><p>下载链接：<br>Windows Update Blocker是一个更改Windows系统更新设置的工具，现在的windows系统都会“有计划”的进行更新，每次更新很耽误时间，所以我们可以用这个工具快速关闭Windows系统更新设置。</p><p>软件界面截图：</p><p><img src="/../post-images/%E5%AE%9E%E7%94%A8%E5%B0%8F%E5%B7%A5%E5%85%B7%E5%90%88%E9%9B%86/Windows%20Update%20Blocker.JPG"></p><!--more--><h3 id="火绒安全软件"><a href="#火绒安全软件" class="headerlink" title="火绒安全软件"></a>火绒安全软件</h3><p>官网链接：<br>火绒这个软件各位肯定都很熟悉，个人版免费而且纯净，保护效果也嘎嘎好，比360全家桶和2345全家桶好太多了！而且火绒后台的病毒数据库是实时更新的，所以火绒在安全性上也更胜一筹。</p><p>软件界面截图：</p><p><img src="/../post-images/%E5%AE%9E%E7%94%A8%E5%B0%8F%E5%B7%A5%E5%85%B7%E5%90%88%E9%9B%86/%E7%81%AB%E7%BB%92.JPG"></p><!--more--><h3 id="酷安桌面"><a href="#酷安桌面" class="headerlink" title="酷安桌面"></a>酷安桌面</h3><p>官网链接：<br>酷安桌面是一个桌面整理软件，它免费、功能实用，而且支持多个界面！相对于其它的收费的桌面整理软件来说，这个软件算得上桌面整理软件的佼佼者了。<br>在使用Wallpaper Engine等动态壁纸软件的时候也可以正常使用这个软件。</p><p>软件界面截图：</p><p>图片</p><!--more--><h3 id="PotPlayer播放器"><a href="#PotPlayer播放器" class="headerlink" title="PotPlayer播放器"></a>PotPlayer播放器</h3><p>下载链接：<br>PotPlayer播放器对于用过的人来说绝对不陌生，这款播放器因为功能强大、纯净和免费而备受欢迎。它可以解码并使用目前常用的大部分格式，如mp3，flac，wav，m4a等格式。而且对于想折腾自定义的人来说也是一个挺不错的播放器，因为这个播放器支持自定义皮肤。</p><p>软件界面截图：</p><p><img src="/../post-images/%E5%AE%9E%E7%94%A8%E5%B0%8F%E5%B7%A5%E5%85%B7%E5%90%88%E9%9B%86/PotPlayer.JPG"></p><!--more--><h3 id="Internet-Download-Manage下载器-IDM下载器"><a href="#Internet-Download-Manage下载器-IDM下载器" class="headerlink" title="Internet Download Manage下载器(IDM下载器)"></a>Internet Download Manage下载器(IDM下载器)</h3><p>下载链接：<br>想必对于这个下载器，对于百度网盘的老生应该不是很陌生，这个软件因为下载速度飞快而著称，并且能和油猴脚本一起使用达到直链下载的效果。就是官网只能免费试用短短几天。不过我这里给的链接是俄罗斯的版本，所以没有限制。</p><p>软件界面截图：</p><p>图片</p><!--more--><h2 id="结束语："><a href="#结束语：" class="headerlink" title="结束语："></a><strong>结束语</strong>：</h2><p>以上就是我常用的一些工具，希望这些工具能帮助到每个看到我博客的人。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 电脑工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 电脑 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>FAT32的结构以及提取文件</title>
       <link href="/posts/3da9c80f.html"/>
       <url>/posts/3da9c80f.html</url>
@@ -182,33 +207,11 @@
     
     
     <entry>
-      <title></title>
-      <link href="/categories/FAT32%E5%88%86%E5%8C%BA%E7%BB%93%E6%9E%84%E5%92%8C%E6%8F%90%E5%8F%96%E6%96%87%E4%BB%B6.html"/>
-      <url>/categories/FAT32%E5%88%86%E5%8C%BA%E7%BB%93%E6%9E%84%E5%92%8C%E6%8F%90%E5%8F%96%E6%96%87%E4%BB%B6.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="FAT32分区结构和提取文件"><a href="#FAT32分区结构和提取文件" class="headerlink" title="FAT32分区结构和提取文件"></a>FAT32分区结构和提取文件</h1><h2 id="结构："><a href="#结构：" class="headerlink" title="结构："></a>结构：</h2><p>　　<em><strong>DBR</strong></em><em><strong>→</strong></em>​<em><strong>DBR备份</strong></em><em><strong>→FAT1→FAT2→</strong></em>​<em><strong>用户数据区（根目录、子目录等）</strong></em></p><p>　　DBR的第一行0D字节（倒数第三个字节）是<em><strong>分区簇数</strong></em></p><p>　　分区簇数获得方式：第一个子目录所在位置-根目录所在位置&#x3D;分区簇数</p><p>　　也可以看成是根目录与子目录的距离</p><p>　　DBR的第二行08~0B字节是<em><strong>分区位置</strong></em></p><p>　　也可以通过左下角的扇区数得知分区位置<em><strong>（在得知当前扇区是DBR位置的情况下）</strong></em></p><p>　　DBR第三行的00~03字节（前面4个字节）是<em><strong>分区的容量大小</strong></em></p><p>　　从DBR向下偏移6个扇区就是FAT32的<em><strong>DBR备份</strong></em></p><p>　　<em><strong>以上信息均可在课本获得</strong></em></p><hr><h3 id="FAT32提取文件："><a href="#FAT32提取文件：" class="headerlink" title="FAT32提取文件："></a>FAT32提取文件：</h3><p>　　先通过向下搜索&quot;!00&quot;(非零)直到找到根目录，在向下“非零”找到<em><strong>子目录</strong></em>（<em><strong>可能不止一个，具体看根目录有显示多少个子目录</strong></em>），找到文件位置的字节和文件大小的字节。</p><p>　　然后计算数值在当前目录跳转文件位置</p><blockquote><p><em><strong>计算公式：</strong></em></p><blockquote><p>文件位置：文件位置10进制数值×分区簇数&#x3D;文件位置</p><p>文件大小：文件大小10进制数值×分区簇数&#x3D;文件大小</p></blockquote></blockquote><p>　　偏移单位为<em><strong>字节（Bytes）</strong></em></p><p>　　到当前扇区的第一个字节做**&quot;选块起始&quot;**</p><p>　　在当前扇区的第一个字节偏移文件大小</p><p>　　在偏移后的位置往前一个字节做**&quot;选块结束&quot;**</p><p>　　最后至新文件即可</p>]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>关于</title>
       <link href="/about/index.html"/>
       <url>/about/index.html</url>
       
-        <content type="html"><![CDATA[<p><strong>哈哈哈，没想到还会有人来看关于这个网站！</strong></p><span id="more"></span><p>行吧，你都进来了，那我和你讲讲我本人和这个网站的经历吧。</p><!-- more --><p>😊<strong>关于博主</strong><br>五月天<br>计算机应用技术 高一<br>目前在博伦职业技术学校学习<br>主要研究方向：还没决定</p><!-- more --><p>👉<strong>关于博客</strong><br>关于这个网站的诞生历程说来话长，因为这原本是我初中就设计开始的计划。记得当时的电脑课，老师把我任命为信息课代表，因此我比班级里任何一个人更有时间接触电脑，加上初一初二的编程社团，我每天都有时间接触电脑去学习电脑的各个操作。<br>直到有一天，我在B站上看到了某个UP主的视频，他完成了自己的网站，那一天我在想，我也要制作自己的网站。正好班级需要一个我们自己的网站来纪念我们的班级。在那之后，每次在学校的电脑课完成任务后，我就开始学习网站的搭建和构造，在社团的时候也在不断实践自己的猜测。直到初三的时候，因为要参加中考，所以取消了社团和电脑课，我的计划在那个时候开始停止。<br>初三毕业了，我重新开始我的计划，可惜到了暑假结束也一直没能完成。因为github访问较难，加上我的电脑在建设中途损毁，所以我被迫重新开始。终于在2022年9月3日搭建完成！<br>就是可惜，因为之前电脑损毁，原本的班级资料也没了，所以这个网站即使建好了对班级也没有用。所以这个网站最后只能拿来作为我的博客网站使用。</p>]]></content>
+        <content type="html"><![CDATA[<p><strong>哈哈哈，没想到还会有人来看关于这个网站！</strong></p><span id="more"></span><p>行吧，你都进来了，那我和你讲讲我本人和这个网站的经历吧。</p><!-- more --><h2 id="关于博主"><a href="#关于博主" class="headerlink" title="关于博主"></a><strong>关于博主</strong></h2><p>五月天<br>计算机应用技术 高一<br>目前在博伦职业技术学校学习<br>主要研究方向：数据恢复和Web前端</p><!-- more --><h2 id="关于博客"><a href="#关于博客" class="headerlink" title="关于博客"></a><strong>关于博客</strong></h2><p>关于这个网站的诞生历程说来话长，因为这原本是我初中就设计开始的计划。记得当时的电脑课，老师把我任命为信息课代表，因此我比班级里任何一个人更有时间接触电脑，加上初一初二的编程社团，我每天都有时间接触电脑去学习电脑的各个操作。<br>直到有一天，我在B站上看到了某个UP主的视频，他完成了自己的网站，那一天我在想，我也要制作自己的网站。正好班级需要一个我们自己的网站来纪念我们的班级。在那之后，每次在学校的电脑课完成任务后，我就开始学习网站的搭建和构造，在社团的时候也在不断实践自己的猜测。直到初三的时候，因为要参加中考，所以取消了社团和电脑课，我的计划也就在那个时候开始停止。<br>初三毕业了，我重新启动我建网站的计划，可惜到了暑假结束也一直没能完成。因为一开始用的工具是Gridea,这个工具方便但是github网站访问较难，每次上传都要等好久，加上我的电脑在建设中途因为个人原因电脑毁坏，所以我的计划再次停止。<br>直到我快开学了，我从家里翻出来了一台很久没用的电脑后，我每天在这个电脑里吧之前写的东西重写了一遍，终于在2022年9月3日搭建完成！<br>就是可惜，因为之前电脑损毁，原本的班级资料也没了，所以这个网站即使建好了对班级也没有用。所以这个网站最后只能拿来作为我的博客网站使用。</p><!--more--><h2 id="关于我的现在"><a href="#关于我的现在" class="headerlink" title="关于我的现在"></a>关于我的现在</h2><p>现在也没什么好讲的，来到了职校，正常的上学学习和复习，每天除了盯着电脑去做题外就是在书本中找到自己所需要的东西和数据。希望现在学的东西都能成为我未来成功的基石。</p><p><em><strong>Never give up and you will be successful!</strong></em></p>]]></content>
       
     </entry>
     
@@ -240,6 +243,28 @@
       <title>标籤</title>
       <link href="/tags/index.html"/>
       <url>/tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/categories/FAT32%E5%88%86%E5%8C%BA%E7%BB%93%E6%9E%84%E5%92%8C%E6%8F%90%E5%8F%96%E6%96%87%E4%BB%B6.html"/>
+      <url>/categories/FAT32%E5%88%86%E5%8C%BA%E7%BB%93%E6%9E%84%E5%92%8C%E6%8F%90%E5%8F%96%E6%96%87%E4%BB%B6.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="FAT32分区结构和提取文件"><a href="#FAT32分区结构和提取文件" class="headerlink" title="FAT32分区结构和提取文件"></a>FAT32分区结构和提取文件</h1><h2 id="结构："><a href="#结构：" class="headerlink" title="结构："></a>结构：</h2><p>　　<em><strong>DBR</strong></em><em><strong>→</strong></em>​<em><strong>DBR备份</strong></em><em><strong>→FAT1→FAT2→</strong></em>​<em><strong>用户数据区（根目录、子目录等）</strong></em></p><p>　　DBR的第一行0D字节（倒数第三个字节）是<em><strong>分区簇数</strong></em></p><p>　　分区簇数获得方式：第一个子目录所在位置-根目录所在位置&#x3D;分区簇数</p><p>　　也可以看成是根目录与子目录的距离</p><p>　　DBR的第二行08~0B字节是<em><strong>分区位置</strong></em></p><p>　　也可以通过左下角的扇区数得知分区位置<em><strong>（在得知当前扇区是DBR位置的情况下）</strong></em></p><p>　　DBR第三行的00~03字节（前面4个字节）是<em><strong>分区的容量大小</strong></em></p><p>　　从DBR向下偏移6个扇区就是FAT32的<em><strong>DBR备份</strong></em></p><p>　　<em><strong>以上信息均可在课本获得</strong></em></p><hr><h3 id="FAT32提取文件："><a href="#FAT32提取文件：" class="headerlink" title="FAT32提取文件："></a>FAT32提取文件：</h3><p>　　先通过向下搜索&quot;!00&quot;(非零)直到找到根目录，在向下“非零”找到<em><strong>子目录</strong></em>（<em><strong>可能不止一个，具体看根目录有显示多少个子目录</strong></em>），找到文件位置的字节和文件大小的字节。</p><p>　　然后计算数值在当前目录跳转文件位置</p><blockquote><p><em><strong>计算公式：</strong></em></p><blockquote><p>文件位置：文件位置10进制数值×分区簇数&#x3D;文件位置</p><p>文件大小：文件大小10进制数值×分区簇数&#x3D;文件大小</p></blockquote></blockquote><p>　　偏移单位为<em><strong>字节（Bytes）</strong></em></p><p>　　到当前扇区的第一个字节做**&quot;选块起始&quot;**</p><p>　　在当前扇区的第一个字节偏移文件大小</p><p>　　在偏移后的位置往前一个字节做**&quot;选块结束&quot;**</p><p>　　最后至新文件即可</p>]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
